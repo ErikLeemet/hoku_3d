@@ -2,100 +2,63 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <div className='main-container w-[1440px] h-[5204px] bg-[#1e1e1e] relative overflow-hidden mx-auto my-0'>
+      <div className='w-[1440px] h-[1637px] relative z-[240] mt-0 mr-0 mb-0 ml-0'>
+        <div className='w-[1440px] h-[150px] absolute top-0 left-0 overflow-hidden z-[222]'>
+          <div className='w-[238.797px] h-[50px] absolute top-[51px] left-[71px] z-[223]'>
+            <span className="flex h-full justify-start items-center font-['ainohead'] text-[32px] font-normal leading-[41.6px] text-[#fff] absolute top-0 left-[37.69%] text-left whitespace-nowrap z-[226]">
+              HOKU3D
+            </span>
+            <div className='w-[25.13%] h-[74.07%] absolute top-[12.96%] left-0 z-[224]'>
+              <img src="/logo.png" alt="Logo" className='w-full h-full bg-[length:100%_100%] absolute top-0 left-0 z-[225]' />
+            </div>
+          </div>
+          <div className='w-[492px] h-[50px] rounded-[10px] absolute top-[51px] left-[476px] z-[227]'>
+            <div className='w-[2px] h-[50px] bg-[#df7026] rounded-[10px] absolute top-0 left-[130px] z-[232]' />
+            <div className='w-[2px] h-[50px] bg-[#df7026] rounded-[10px] absolute top-0 left-[370px] z-[233]' />
+            <div className='w-[2px] h-[50px] bg-[#df7026] rounded-[10px] absolute top-0 left-[490px] z-[234]' />
+            <div className='w-[2px] h-[50px] bg-[#df7026] rounded-[10px] absolute top-0 left-0 z-[235]' />
+            <div className='w-[2px] h-[50px] bg-[#df7026] rounded-[10px] absolute top-0 left-[250px] z-[236]' />
+            <button className="flex h-[23px] justify-start items-start font-['Aino'] text-[20px] font-normal leading-[23px] text-[#fff] tracking-[2px] absolute top-[14px] left-[389px] text-left whitespace-nowrap z-[228]">
+              contact
+            </button>
+            <button className="flex w-[100px] h-[23px] justify-center items-start font-['Aino'] text-[20px] font-normal leading-[23px] text-[#fff] tracking-[2px] absolute top-[14px] left-[13px] text-center whitespace-nowrap z-[229]">
+              home
+            </button>
+            <button className="flex w-[100px] h-[23px] justify-center items-start font-['Aino'] text-[20px] font-normal leading-[23px] text-[#fff] tracking-[2px] absolute top-[14px] left-[143px] text-center whitespace-nowrap z-[230]">
+              about
+            </button>
+            <button className="flex w-[75px] h-[23px] justify-center items-start font-['Aino'] text-[20px] font-normal leading-[23px] text-[#fff] tracking-[2px] absolute top-[14px] left-[273px] text-center whitespace-nowrap z-[231]">
+              gallery
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className='w-[1440px] h-[808px] absolute top-px left-0 z-[220]' />
+        <span className="flex w-[989.222px] h-[31.35%] justify-start items-center font-['audiowide'] text-[77px] font-normal leading-[98.167px] text-[#fff] tracking-[3.85px] absolute top-[7.39%] left-[4.93%] text-left z-[238]">
+          START <br />
+          3D PRINTING
+          <br />
+          TODAY
+        </span>
+        <button className='w-[20.83%] h-[3.05%] bg-[#fff] rounded-[54px] absolute top-[40.86%] left-[4.93%] z-[240] text-[#000] transition ease-in-out duration-200 hover:text-[#fff] hover:bg-[#E07126]'>
+          <span className="flex w-4/5 h-2/5 justify-center items-center font-['Aino'] text-[20px] font-normal leading-[19.997px] tracking-[2px] absolute top-[34.24%] left-[10.06%] text-center whitespace-nowrap z-[241]">
+            SERVICES
+          </span>
+        </button>
+        <div className='w-[209px] h-[44.12px] absolute top-[672px] left-[1151px] z-[237]' />
+        <div className='w-[1440px] h-[900px] absolute top-[737px] left-0 z-[1]' />
+        <div className='w-[120px] h-[120px] absolute top-[902px] left-[201px] z-20'>
+        <div className='w-[60px] h-[60px] relative z-[21] mt-[30px] mr-0 mb-0 ml-[30px]' />
+        </div>
+        <div className='w-[120px] h-[120px] absolute top-[902px] left-[661px] z-[22]'>
+          <div className='w-[60px] h-[60px] relative z-[24] mt-[30px] mr-0 mb-0 ml-[29px]' />
+        </div>
+        <div className='w-[120px] h-[120px] absolute top-[902.002px] left-[1122px] z-[23]'>
+          <div className='w-[60px] h-[60px] relative z-[25] mt-[29.998px] mr-0 mb-0 ml-[30px]' />
+        </div>
+        </div>
+        </div>
     </div>
   );
 }
