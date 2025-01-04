@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "the-wave": "url('/wave.png')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <div>
       <div className='main-container w-[1440px] h-[5204px] bg-[#1e1e1e] relative overflow-hidden mx-auto my-0'>
+    <div className='w-[1440px] h-[1637px] bg-the-wave bg-no-repeat opacity-30 absolute z-[240] mt-0 mr-0 mb-0 ml-0'></div>
       <div className='w-[1440px] h-[1637px] relative z-[240] mt-0 mr-0 mb-0 ml-0'>
         <div className='w-[1440px] h-[150px] absolute top-0 left-0 overflow-hidden z-[222]'>
           <div className='w-[238.797px] h-[50px] absolute top-[51px] left-[71px] z-[223]'>
@@ -46,17 +47,6 @@ export default function Home() {
             SERVICES
           </span>
         </button>
-        <div className='w-[209px] h-[44.12px] absolute top-[672px] left-[1151px] z-[237]' />
-        <div className='w-[1440px] h-[900px] absolute top-[737px] left-0 z-[1]' />
-        <div className='w-[120px] h-[120px] absolute top-[902px] left-[201px] z-20'>
-        <div className='w-[60px] h-[60px] relative z-[21] mt-[30px] mr-0 mb-0 ml-[30px]' />
-        </div>
-        <div className='w-[120px] h-[120px] absolute top-[902px] left-[661px] z-[22]'>
-          <div className='w-[60px] h-[60px] relative z-[24] mt-[30px] mr-0 mb-0 ml-[29px]' />
-        </div>
-        <div className='w-[120px] h-[120px] absolute top-[902.002px] left-[1122px] z-[23]'>
-          <div className='w-[60px] h-[60px] relative z-[25] mt-[29.998px] mr-0 mb-0 ml-[30px]' />
-        </div>
         </div>
         </div>
     </div>
