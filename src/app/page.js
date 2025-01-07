@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Service from "./service/page.js";
+import Gallery from "./gallery/page.js";
 
 export default function Home() {
   return (
-    <div>
       <div className="main-container w-[1440px] h-[5204px] bg-[#1e1e1e] relative overflow-hidden mx-auto my-0">
         <div className="w-[1440px] min-h-[808px] bg-the-wave-dark bg-no-repeat relative z-[240] mt-0 mr-0 mb-0 ml-0 shadow-[0px_50px_35px_0px_rgba(194,_83,_8,_0.75)]">
           <div className="w-[1440px] h-[150px] absolute top-0 left-0 overflow-hidden z-[222]">
@@ -60,7 +60,7 @@ export default function Home() {
           </button>
         </div>
         <Service/>
+        <Gallery/>
       </div>
-    </div>
   );
 }
