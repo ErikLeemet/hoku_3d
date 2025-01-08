@@ -1,18 +1,18 @@
 import localFont from "next/font/local";
-import {Audiowide} from "next/font/google"
+import { Audiowide } from "next/font/google";
 import "./globals.css";
 
 const ainohead = localFont({
-    src: "./fonts/Aino-Headline.woff2",
-    weight: "400",
-  });
+  src: "./fonts/Aino-Headline.woff2",
+  weight: "400",
+});
 const aino = localFont({
   src: "./fonts/Aino-Regular.woff2",
   weight: "400",
 });
 const audiowide = Audiowide({
   weight: "400",
-  subsets: ['latin'],
+  subsets: ["latin"],
 });
 
 export const metadata = {
@@ -23,10 +23,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${aino} ${audiowide} ${ainohead} antialiased`}
-      >
-        <main className="max-w-8xl mx-auto" >{children}</main>
+      <body className={`${aino} ${audiowide} ${ainohead} antialiased`}>
+        {children}
       </body>
     </html>
   );
