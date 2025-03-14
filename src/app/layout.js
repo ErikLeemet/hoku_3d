@@ -2,6 +2,22 @@ import localFont from "next/font/local";
 import { Audiowide } from "next/font/google";
 import "./globals.css";
 
+const thedusCLR = localFont({
+    src: "./fonts/ThedusCondensedLight-Regular.otf",
+    weight: "400",
+  });
+const thedusCLB = localFont({
+    src: "./fonts/ThedusCondensedLight-Bold.otf",
+    weight: "400",
+});
+const thedusWLR = localFont({
+    src: "./fonts/ThedusWideLight-Regular.otf",
+    weight: "400",
+});
+const thedusWLB = localFont({
+    src: "./fonts/ThedusWideLight-Bold.otf",
+    weight: "400",
+});
 const ainohead = localFont({
   src: "./fonts/Aino-Headline.woff2",
   weight: "400",
@@ -23,7 +39,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${aino} ${audiowide} ${ainohead} antialiased`}>
+      <body className={`${thedusCLR} ${thedusCLB} ${thedusWLR} ${thedusWLB} ${aino} ${audiowide} ${ainohead} antialiased`}>
         {children}
       </body>
     </html>

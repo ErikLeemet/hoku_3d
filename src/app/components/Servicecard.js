@@ -2,13 +2,11 @@ import React from "react";
 
 const Servicecard = ({title, text, children}) => {
   return (
-    <div className="card bg-base-100 w-[20rem] h-[20rem] lg:w-[22rem] lg:h-[24rem] shadow-xl">
+    <div className="card bg-primary w-[280px] h-[360px] lg:w-[22rem] lg:h-[24rem] shadow-lg shadow-neutral">
       <div className="card-body">
-        <h2 className="card-title text-2xl font-[audiowide] border-b pb-2">{title}</h2>
-        {text && <p>{text}</p>}
+        <h2 className="card-title text-2xl font-['thedusWLB'] border-b-2 border-neutral pb-2 text-accent">{title}</h2>
+        {text && <p className="font-['thedusCLR']">{text}</p>}
         {children && <div className="mt-4">{children}</div>}
-        <div className="card-actions justify-end">
-        </div>
       </div>
     </div>
   );

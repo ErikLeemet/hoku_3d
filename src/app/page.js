@@ -6,21 +6,20 @@ import Filament from "./filament/page.js";
 export default function Home() {
   return (
     <div className="main-container responsive relative overflow-hidden mx-auto my-0">
-      <div className="responsive h-screen box-border flex flex-col bg-[url(/thewave.png)] bg-no-repeat bg-cover mt-0 mr-0 mb-0 ml-0 inline-[0px]">
+      <div className="relative responsive h-screen box-border flex flex-col mt-0 mr-0 mb-0 ml-0 inline-[0px] items-center justify-center">
         <Navbar />
-        <div className="responsive h-full px-4 md:px-16 pb-[90px] box-border flex flex-col items-center md:items-start">
-          <span className="font-['audiowide'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal text-left my-auto py-8 box-border tracking-wide">
-            START <br />
-            3D PRINTING
-            <br />
-            TODAY
-          </span>
-          <div className="w-full h-12 mt-4 flex itmes-center justify-center md:justify-between">
-            <button class="btn btn-outline w-64 text-xl tracking-wider ">
-              Services
-            </button>
-            <div className="h-12 w-42  hidden md:block">
-              <img src="/wave.svg" alt="wave" />
+        <div className="hero bg-base-100 flex-1 max-w-[260px]">
+          <div className="hero-content p-0">
+            <div className="max-w-md">
+              <h1 className="text-2xl font-bold font-['thedusWLB'] text-accent">Täpsus ja kvaliteet igas detailis</h1>
+              <p className="py-6 font-['thedusCLR'] text-secondary">
+                3D-printimine ja graveerimine sinu ideede elluviimiseks. Kujunda detaile, kohanda esemeid ja loo midagi ainulaadset.
+              </p>
+              <div className="gap-5 w-full flex justify-center">
+                <button className="btn btn-secondary min-w-[120px] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">teenused</button>
+                <button className="btn btn-secondary min-w-[120px] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">kontakt</button>
+              </div>
+              <img src="v1_WAVE.svg" alt="wave" className="absolute top-0 right-5 z-[-10] opacity-75"/>
             </div>
           </div>
         </div>

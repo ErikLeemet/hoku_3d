@@ -9,15 +9,15 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#E07125",
+          primary: "#F6FFEC",
 
-          secondary: "#f3f4f6",
+          secondary: "#010101",
 
-          accent: "#16C47F",
+          accent: "#FF7178",
 
-          neutral: "#1e1e1e",
+          neutral: "#B5BAAF",
 
-          "base-100": "#1e1e1e",
+          "base-100": "#D4E7E3",
 
           info: "#818cf8",
 
@@ -37,17 +37,6 @@ module.exports = {
       lg: "1024px", // Large Tablet / Small Laptop
       xl: "1280px", // Desktop
       "2xl": "1920px", // Large Desktop
-    },
-    extend: {
-      backgroundImage: {
-        "the-wave-dark": "url('/wave_dark.png')",
-      },
-      colors: {
-        main: "var(--main)",
-        nero: "#1E1E1E",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
     },
   },
   plugins: [require("daisyui")],
