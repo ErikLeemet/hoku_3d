@@ -22,8 +22,8 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div className="relative w-[336px] mx-auto p-[0.6rem]">
-      <div className="overflow-hidden rounded-lg">
+    <div className="relative flex flex-col justify-center items-center w-[336px] mx-auto">
+      <div className="overflow-hidden rounded-sm shadow-md shadow-secondary/50 border-4 border-secondary">
         <motion.div
           className="flex items-center"
           animate={{ x: `-${currentIndex * 100}%` }}
@@ -36,13 +36,12 @@ export default function ImageCarousel() {
                 alt={`Slide ${index + 1}`}
                 width={800}
                 height={500}
-                className="w-full h-[350px] object-cover"
+                className="w-full min-h-[426px] object-cover"
               />
             </div>
           ))}
         </motion.div>
       </div>
-
       {/* Navigation Buttons */}
       <button onClick={prevSlide} className="absolute w-1/2 h-full flex left-2 top-1/2 -translate-y-1/2">
       </button>
@@ -50,13 +49,13 @@ export default function ImageCarousel() {
       </button>
 
       {/* Indicator Buttons */}
-      <div className="flex rounded-lg justify-center bg-primary gap-2 mt-2 pb-2">
+      <div className="flex rounded-sm justify-center bg-neutral gap-2 mt-6 pb-2 px-3">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-6 h-6 transform border-transparent border-l-[12px] border-r-[12px] border-b-[16px] border-solid
-              ${currentIndex === index ? 'border-b-accent' : 'border-b-neutral'}`}
+              ${currentIndex === index ? 'border-b-accent' : 'border-b-primary'}`}
             style={{ borderRadius: '4px' }}
           ></button>
         ))}
