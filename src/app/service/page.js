@@ -20,7 +20,7 @@ const Service = () => {
       />
       <Servicecard title={"3D MODELING"} text={""}>
         <div className="flex justify-center items-center flex-col min-h-16 w-full rounded-lg bg-base-100 font-['thedusWLR'] text-secondary text-2xl">
-          <span className="text-black text-2xl border-b-2 border-black relative before:absolute before:-inset-1 before:bg-black before:h-2 before:w-2 before:rounded-full before:top-[28px]">COMING SOON</span>
+          <span className="text-secondary text-2xl border-b-2 border-secondary relative before:absolute before:-inset-1 before:bg-secondary before:h-2 before:w-2 before:rounded-full before:top-[28px]">COMING SOON</span>
         </div>
       </Servicecard>
           </div>
