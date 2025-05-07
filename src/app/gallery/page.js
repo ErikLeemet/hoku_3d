@@ -3,7 +3,7 @@ import ImageSlider from "../components/Image-slider.js";
 
 const Gallery = () => {
   return (
-    <div className="flex justify-center items-center w-full h-screen bg-primary">
+    <div className="flex justify-center items-center w-full min-h-screen py-12 bg-primary">
       <div className="flex flex-col mx-6">
         <div className="w-full mx-auto max-w-4xl">
           <div className="flex justify-center items-center gap-[1rem] pb-6">

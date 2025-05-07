@@ -18,61 +18,53 @@ const Plastic = () => {
           <div className="w-[8px] h-[40px] bg-secondary"></div>
         </div>
       </div>
+      <div className="flex flex-col lg:flex-row-reverse items-center justify-center">
         <div className="flex justify-center gap-4">
           {/*PLA*/}
           <div className="relative">
-            <span className="font-[thedusWLB] text-secondary text-xs absolute inset-0 flex items-center justify-center pt-4">
+            <span className="font-[thedusWLB] text-secondary text-xs lg:text-lg absolute inset-0 flex items-center justify-center pt-4 lg:pt-6">
               PLA
             </span>
             <svg
-              width="62"
-              height="56"
               viewBox="0 0 62 56"
               fill="none"
-              className="stroke-secondary"
+              className="stroke-secondary stroke-3 lg:stroke-2 w-[62px] h-[56px] lg:w-[112px] lg:h-[106px]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M34.0311 3.75L60.0119 48.75C61.359 51.0833 59.6751 54 56.9808 54H5.01924C2.32494 54 0.640998 51.0833 1.98815 48.75L27.9689 3.75C29.3161 1.41667 32.6839 1.41667 34.0311 3.75Z"
-                stroke-width="3"
               />
             </svg>
           </div>
           {/*ABS*/}
           <div className="relative">
-            <span className="font-[thedusWLB] text-secondary text-xs absolute inset-0 flex items-center justify-center pt-4">
+            <span className="font-[thedusWLB] text-secondary text-xs lg:text-lg absolute inset-0 flex items-center justify-center pt-4 lg:pt-6">
               ABS
             </span>
             <svg
-              width="62"
-              height="56"
               viewBox="0 0 62 56"
               fill="none"
-              className="stroke-secondary"
+              className="stroke-secondary stroke-3 lg:stroke-2 w-[62px] h-[56px] lg:w-[112px] lg:h-[106px]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M34.0311 3.75L60.0119 48.75C61.359 51.0833 59.6751 54 56.9808 54H5.01924C2.32494 54 0.640998 51.0833 1.98815 48.75L27.9689 3.75C29.3161 1.41667 32.6839 1.41667 34.0311 3.75Z"
-                stroke-width="3"
               />
             </svg>
           </div>
           {/*PETG*/}
           <div className="relative">
-            <span className="font-[thedusWLB] text-secondary text-xs absolute inset-0 flex items-center justify-center pt-4">
+            <span className="font-[thedusWLB] text-secondary text-xs lg:text-lg absolute inset-0 flex items-center justify-center pt-4 lg:pt-6">
               PETG
             </span>
             <svg
-              width="62"
-              height="56"
               viewBox="0 0 62 56"
               fill="none"
-              className="stroke-secondary"
+              className="stroke-secondary stroke-3 lg:stroke-2 w-[62px] h-[56px] lg:w-[112px] lg:h-[106px]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M34.0311 3.75L60.0119 48.75C61.359 51.0833 59.6751 54 56.9808 54H5.01924C2.32494 54 0.640998 51.0833 1.98815 48.75L27.9689 3.75C29.3161 1.41667 32.6839 1.41667 34.0311 3.75Z"
-                stroke-width="3"
               />
             </svg>
           </div>
@@ -92,6 +84,7 @@ const Plastic = () => {
             <h3 className="font-[thedusWLB] text-lg">filaments</h3>
           </div>
             <p>At Hoku3D, we offer three standard filament types and maintain a basic color selection of black and white. Any additional color requests will need to be specified by the customer and will incur extra charges.</p>
+        </div>
         </div>
       </div>
     </div>

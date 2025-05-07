@@ -26,6 +26,9 @@ module.exports = {
             warning: "#fde047",
 
             error: "#ef4444",
+
+            "--custom-shadow":
+            "5px 5px rgba(255, 113 ,120, 0.4), 10px 10px rgba(255, 113 ,120, 0.3), 15px 15px rgba(255, 113, 120, 0.2), 20px 20px rgba(255, 113, 120, 0.1), 25px 25px rgba(255, 113, 120, 0.05)",
           },
           darkspace: {
               primary: "#1A1A1A",
@@ -45,6 +48,9 @@ module.exports = {
               warning: "#fde047",
 
               error: "#ef4444",
+
+              "--custom-shadow":
+            "5px 5px rgba(227, 244, 73, 0.4), 10px 10px rgba(227, 244, 73, 0.3), 15px 15px rgba(227, 244, 73, 0.2), 20px 20px rgba(227, 244, 73, 0.1), 25px 25px rgba(227, 244, 73, 0.05)",
             },
         },
       ],

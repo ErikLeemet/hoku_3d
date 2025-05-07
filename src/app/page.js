@@ -1,24 +1,26 @@
 import Service from "./service/page.js";
 import Gallery from "./gallery/page.js";
 import Navbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
 import Filament from "./filament/page.js";
 import Plastic from "./plastic/page.js";
+import Contact from "./contact/page.js";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <div className="relative responsive h-screen box-border flex flex-col mt-0 mr-0 mb-0 ml-0 inline-[0px] items-center justify-center">
         <Navbar />
-        <div className="hero bg-base-100 flex-1 max-w-[260px]">
+      <div id="home" className="relative responsive h-screen box-border flex flex-col mt-0 mr-0 mb-0 ml-0 inline-[0px] items-center justify-center">
+        <div className="hero bg-base-100 flex-1 max-w-[260px] lg:max-w-[1000px]">
           <div className="hero-content p-0">
-            <div className="max-w-md">
-              <h1 className="text-2xl font-bold font-['thedusWLB'] text-accent">Täpsus ja kvaliteet igas detailis</h1>
-              <p className="py-6 font-['thedusCLR'] text-secondary">
+            <div className="max-w-md lg:max-w-[1000px] flex flex-col items-center justify-center">
+              <h1 className="text-2xl font-bold font-['thedusWLB'] text-accent lg:text-5xl lg:whitespace-nowrap">Täpsus ja kvaliteet igas detailis</h1>
+              <p className="py-6 font-['thedusCLR'] text-secondary lg:text-2xl lg:text-center lg:max-w-[550px]">
                 3D-printimine ja graveerimine sinu ideede elluviimiseks. Kujunda detaile, kohanda esemeid ja loo midagi ainulaadset.
               </p>
               <div className="gap-5 w-full flex justify-center">
-                <button className="btn btn-secondary min-w-[120px] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">teenused</button>
-                <button className="btn btn-secondary min-w-[120px] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">kontakt</button>
+                <button className="btn btn-secondary min-w-[7.5rem] lg:max-w-[11.25rem] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">teenused</button>
+                <button className="btn btn-secondary min-w-[7.5rem] lg:max-w-[11.25rem] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">kontakt</button>
               </div>
               <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +45,8 @@ export default function Home() {
       <Gallery />
       <Plastic />
       <Filament />
+      <Contact />
+        <Footer />
     </div>
   );
 }
