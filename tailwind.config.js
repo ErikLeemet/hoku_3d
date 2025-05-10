@@ -13,6 +13,8 @@ module.exports = {
 
             secondary: "#010101",
 
+            third: "#383838",
+
             accent: "#FF7178",
 
             neutral: "#B5BAAF",
@@ -34,6 +36,8 @@ module.exports = {
               primary: "#1A1A1A",
 
               secondary: "#FFFFFF",
+
+              third: "#4b4f23",
 
               accent: "#E3F449",
 

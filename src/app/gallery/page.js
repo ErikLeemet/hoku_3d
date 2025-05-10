@@ -7,8 +7,8 @@ const Gallery = () => {
         <div className="flex justify-center items-center w-full bg-accent py-4 mb-12">
           <div className="flex justify-center items-center gap-2">
             <div className="flex">
-                <div className="font-[thedusCLB] text-4xl text-primary -rotate-90">V4</div>
-                <div className="w-[4px] h-[40px] bg-primary"></div>
+                <div className="font-[thedusCLB] text-4xl text-third -rotate-90">V4</div>
+                <div className="w-[4px] h-[40px] text-4xl bg-third">:</div>
             </div>
             <span className="font-[thedusCLB] text-3xl text-primary">
               Gallery
