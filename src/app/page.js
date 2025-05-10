@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
 import Plastic from "./plastic/page.js";
 import Contact from "./contact/page.js";
+import About from "./about/about.js";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
       <Plastic />
       <Gallery />
       <Contact />
+      <About   />
       <Footer />
     </div>
   );
