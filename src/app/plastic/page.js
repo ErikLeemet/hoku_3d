@@ -1,17 +1,18 @@
+import ProsConsItem from "../components/ProsConsItem.js";
 import React from "react";
 
 const Plastic = () => {
   return (
-    <div className="flex items-center flex-col w-full h-screen bg-primary">
-        <div className="mx-6 max-w-4xl flex flex-col">
+    <div className="flex items-center flex-col w-full h-full bg-primary">
+        <div className="mx-6 max-w-4xl xl:max-w-5xl flex flex-col">
       {/*title*/}
-      <div className="flex gap-[1rem] items-center justify-center py-10">
+      <div className="flex gap-[1rem] items-center justify-center pt-10 pb-10 lg:pb-0">
         <div className="flex gap-[0.5rem]">
           <div className="w-[8px] h-[40px] bg-secondary"></div>
           <div className="w-[8px] h-[40px] bg-secondary"></div>
           <div className="w-[8px] h-[40px] bg-secondary"></div>
         </div>
-        <span className="font-[thedusWLB] text-xl text-accent">Plastikud</span>
+        <span className="font-[thedusCLB] text-2xl text-accent">Plastics</span>
         <div className="flex gap-[0.5rem]">
           <div className="w-[8px] h-[40px] bg-secondary"></div>
           <div className="w-[8px] h-[40px] bg-secondary"></div>
@@ -22,13 +23,13 @@ const Plastic = () => {
         <div className="flex justify-center gap-4">
           {/*PLA*/}
           <div className="relative">
-            <span className="font-[thedusWLB] text-secondary text-xs lg:text-lg absolute inset-0 flex items-center justify-center pt-4 lg:pt-6">
+            <span className="font-[thedusWLB] text-secondary text-xs md:text-lg absolute inset-0 flex items-center justify-center pt-4 md:pt-6">
               PLA
             </span>
             <svg
               viewBox="0 0 62 56"
               fill="none"
-              className="stroke-secondary stroke-3 lg:stroke-2 w-[62px] h-[56px] lg:w-[112px] lg:h-[106px]"
+              className="stroke-secondary stroke-2 w-[82px] h-[76px] md:w-[112px] md:h-[106px]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -38,13 +39,13 @@ const Plastic = () => {
           </div>
           {/*ABS*/}
           <div className="relative">
-            <span className="font-[thedusWLB] text-secondary text-xs lg:text-lg absolute inset-0 flex items-center justify-center pt-4 lg:pt-6">
+            <span className="font-[thedusWLB] text-secondary text-xs md:text-lg absolute inset-0 flex items-center justify-center pt-4 md:pt-6">
               ABS
             </span>
             <svg
               viewBox="0 0 62 56"
               fill="none"
-              className="stroke-secondary stroke-3 lg:stroke-2 w-[62px] h-[56px] lg:w-[112px] lg:h-[106px]"
+              className="stroke-secondary stroke-2 w-[82px] h-[76px] md:w-[112px] md:h-[106px]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -54,13 +55,13 @@ const Plastic = () => {
           </div>
           {/*PETG*/}
           <div className="relative">
-            <span className="font-[thedusWLB] text-secondary text-xs lg:text-lg absolute inset-0 flex items-center justify-center pt-4 lg:pt-6">
+            <span className="font-[thedusWLB] text-secondary text-xs md:text-lg absolute inset-0 flex items-center justify-center pt-4 md:pt-6">
               PETG
             </span>
             <svg
               viewBox="0 0 62 56"
               fill="none"
-              className="stroke-secondary stroke-3 lg:stroke-2 w-[62px] h-[56px] lg:w-[112px] lg:h-[106px]"
+              className="stroke-secondary stroke-2 w-[82px] h-[76px] md:w-[112px] md:h-[106px]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -69,7 +70,7 @@ const Plastic = () => {
             </svg>
           </div>
         </div>
-        <div className="font-[thedusCLR] text-lg text-secondary p-6">
+        <div className="font-[thedusCLR] text-lg text-secondary p-6 pl-0">
           <div className="flex gap-4 items-center py-6">
             <svg
               width="20"
@@ -85,6 +86,81 @@ const Plastic = () => {
           </div>
             <p>At Hoku3D, we offer three standard filament types and maintain a basic color selection of black and white. Any additional color requests will need to be specified by the customer and will incur extra charges.</p>
         </div>
+        </div>
+
+
+        {/*PROS AND CONS*/}
+
+
+        <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-10">
+            <div className="flex w-[280px] h-[460px] xl:w-[22rem] xl:h-[28,75rem] space-y-8 items-start flex-col rounded-xl bg-base-100 p-6 xl:p-8">
+
+                <h3 className="text-5xl font-[audiowide] min-w-full text-center py-5 text-secondary">PLA</h3>
+
+                <ul role="list" className="mb-8 space-y-4 text-left text-secondary">
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Eco-Friendly"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Great detail"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Good for prototypes"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Good for decorative item"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="con" text="low heat resistance (softens at ~60°C)"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="con" text="Brittle compared to other plastics"/>
+                    </li>
+                </ul>
+
+            </div>
+            <div className="flex w-[280px] h-[460px] xl:w-[22rem] xl:h-[28,75rem] space-y-8 items-start flex-col rounded-xl bg-base-100 p-6 xl:p-8">
+
+                <h3 className="text-5xl font-[audiowide] min-w-full text-center py-5 text-secondary">ABS</h3>
+
+                <ul role="list" className="mb-8 space-y-4 text-left text-secondary">
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Strong and durable"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Higher heat resistance up to ~100°C"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Good for functional parts"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Good for car components"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="good for stronger prototypes"/>
+                    </li>
+                </ul>
+
+            </div>
+            <div className="flex w-[280px] h-[460px] xl:w-[22rem] xl:h-[28,75rem] çspace-y-8 items-start flex-col rounded-xl bg-base-100 p-6 xl:p-8">
+
+                <h3 className="text-5xl font-[audiowide] min-w-full text-center py-5 text-secondary">PETG</h3>
+
+                <ul role="list" className="mb-8 space-y-4 text-left text-secondary">
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Tough and flexible"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Chemical resistance (Withstands water and acids)"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Good for functional parts expose to stress, outdoor applications"/>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                        <ProsConsItem type="pro" text="Good for decorative items"/>
+                    </li>
+                </ul>
+            </div>
         </div>
       </div>
     </div>

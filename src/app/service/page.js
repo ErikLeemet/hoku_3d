@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <div id="services" className="h-[1600px] xl:h-[800px] py-12 flex relative flex-col items-center justify-center bg-base-100">
       <div className="flex max-w-screen-xl mx-auto items-center justify-center px-4 py-8 lg:px-6 lg:py-16 ">
-          <div className="space-y-8 gap-10 xl:gap-4 xl:grid lg:grid-cols-3 xl:space-y-0">
+          <div className="space-y-8 gap-[10px] xl:gap-8 xl:grid lg:grid-cols-3 xl:space-y-0">
           <Servicecard
         title={"3D PRINTING"}
         text={

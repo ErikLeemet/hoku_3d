@@ -2,7 +2,6 @@ import Service from "./service/page.js";
 import Gallery from "./gallery/page.js";
 import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
-import Filament from "./filament/page.js";
 import Plastic from "./plastic/page.js";
 import Contact from "./contact/page.js";
 
@@ -42,11 +41,10 @@ export default function Home() {
         </div>
       </div>
       <Service />
-      <Gallery />
       <Plastic />
-      <Filament />
+      <Gallery />
       <Contact />
-        <Footer />
+      <Footer />
     </div>
   );
 }

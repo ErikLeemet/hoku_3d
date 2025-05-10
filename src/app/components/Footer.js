@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full">
+    <div className="w-full h-full">
       <footer className="flex flex-col w-full mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row md:justify-between md:px-6 items-center border-b-2 border-neutral pb-6">
           <h1 className="text-2xl md:text-3xl font-['thedusWLB'] text-accent">
