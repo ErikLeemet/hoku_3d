@@ -12,7 +12,7 @@ const Plastic = () => {
           <div className="w-[8px] h-[40px] bg-secondary"></div>
           <div className="w-[8px] h-[40px] bg-secondary"></div>
         </div>
-        <span className="font-[thedusCLB] text-2xl text-accent">Plastics</span>
+        <span className="font-[thedusCLB] text-3xl text-accent">Plastics</span>
         <div className="flex gap-[0.5rem]">
           <div className="w-[8px] h-[40px] bg-secondary"></div>
           <div className="w-[8px] h-[40px] bg-secondary"></div>

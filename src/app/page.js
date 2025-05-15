@@ -44,8 +44,8 @@ export default function Home() {
       <Service />
       <Plastic />
       <Gallery />
+      <About />
       <Contact />
-      <About   />
       <Footer />
     </div>
   );
