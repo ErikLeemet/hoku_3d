@@ -3,8 +3,11 @@ import React from "react";
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full min-h-screen py-12 bg-primary">
-      <div className="min-h-full w-full max-w-4xl mx-auto">
-        <div className="flex flex-col justify-center items-center gap-4">
+      <div className="min-h-full w-full max-w-4xl px-6 mx-auto">
+
+        {/*Title and description*/}
+
+        <div className="flex flex-col justify-center items-center gap-4 mx-auto">
           <div className="flex gap-4 justify-center items-center w-full">
             <svg
               className="fill-secondary"
@@ -29,8 +32,11 @@ const About = () => {
             one-off item, a prototype, or something personal, we keep it simple,
             fast, and local.
           </p>
-          <div className="w-full h-[1.4rem] bg-accent"></div>
+          <div className="min-w-full h-[1.4rem] bg-accent"></div>
         </div>
+
+        {/*Team section*/}
+
         <div className="flex gap-4 justify-center items-center w-full py-[3.125rem]">
           <svg
             className="fill-accent"
@@ -46,8 +52,11 @@ const About = () => {
             The team
           </h3>
         </div>
-        <div className="flex justify-between items-center mb-10">
-          <div className="flex w-[280px] h-[460px] lg:w-[25rem] lg:h-[28,75rem] items-start flex-col rounded-md bg-base-100 px-4 pt-4 pb-6">
+        <div className="flex flex-col md:flex-row justify-around lg:justify-between items-center gap-8 mb-10">
+
+        {/*ERIK*/}
+
+          <div className="flex w-[320px] h-[460px] lg:w-[25rem] lg:h-[28,75rem] items-start flex-col rounded-md bg-base-100 px-4 pt-4 pb-6">
             <div className="flex gap-4 justify-between items-center w-full">
               <div className="w-[60px] h-[40px]">
                 <svg
@@ -132,7 +141,10 @@ const About = () => {
               </svg>
             </div>
           </div>
-          <div className="flex w-[280px] h-[460px] lg:w-[25rem] lg:h-[28,75rem] items-start flex-col rounded-md bg-base-100 px-4 pt-4 pb-6">
+
+            {/*MARCUS*/}
+
+          <div className="flex w-[320px] h-[460px] lg:w-[25rem] lg:h-[28,75rem] items-start flex-col rounded-md bg-base-100 px-4 pt-4 pb-6">
             <div className="flex gap-4 justify-between items-center w-full">
               <div className="w-[60px] h-[40px]">
                 <svg
