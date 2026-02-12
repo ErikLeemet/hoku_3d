@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const about = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full min-h-screen py-12 bg-primary">
       <div className="min-h-full w-full max-w-4xl px-6 mx-auto">
@@ -235,4 +235,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default about;

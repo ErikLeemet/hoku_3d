@@ -26,25 +26,25 @@ const Footer = () => {
                 d="M12.0805 21.385C11.993 21.385 11.9055 21.35 11.8355 21.28C11.6955 21.14 11.6955 20.93 11.8355 20.79L15.458 17.1675C15.598 17.0275 15.808 17.0275 15.948 17.1675C16.088 17.3075 16.088 17.5175 15.948 17.6575L12.343 21.28C12.273 21.35 12.168 21.385 12.0805 21.385ZM23.2105 21.385C23.123 21.385 23.0355 21.35 22.9655 21.28L19.343 17.6575C19.203 17.5175 19.203 17.3075 19.343 17.1675C19.483 17.0275 19.693 17.0275 19.833 17.1675L23.4555 20.79C23.5955 20.93 23.5955 21.14 23.4555 21.28C23.3855 21.35 23.298 21.385 23.2105 21.385Z"
               />
             </svg>
-            <a className="text-sm">info@hoku3d.com</a>
+            <a className="text-xl font-light ">info@hoku3d.com</a>
           </div>
         </div>
         <div className="flex flex-col md:flex-row md:justify-between md:px-6 items-center">
           <div className="flex gap-2 justify-center items-center py-6">
-            <a className="btn w-[70px] md:w-[100px] bg-transparent btn-xs border-transparent hover:border-transparent hover:bg-transparent shadow-transparent hover:text-tahiti-gold cursor-pointer">
+            <a className="btn w-[70px] md:w-[100px] font-['thedusCLR'] bg-transparent btn-xs text-2xl border-transparent hover:border-transparent hover:bg-transparent shadow-transparent hover:text-tahiti-gold cursor-pointer">
               Home
             </a>
-            <a className="btn w-[70px] md:w-[100px] bg-transparent btn-xs border-transparent hover:border-transparent hover:bg-transparent shadow-transparent hover:text-tahiti-gold cursor-pointer">
+            <a className="btn w-[70px] md:w-[100px] font-['thedusCLR'] bg-transparent btn-xs text-2xl border-transparent hover:border-transparent hover:bg-transparent shadow-transparent hover:text-tahiti-gold cursor-pointer">
               About
             </a>
-            <a className="btn w-[70px] md:w-[100px] bg-transparent btn-xs border-transparent hover:border-transparent hover:bg-transparent shadow-transparent hover:text-tahiti-gold cursor-pointer">
+            <a className="btn w-[70px] md:w-[100px] font-['thedusCLR'] bg-transparent btn-xs text-2xl border-transparent hover:border-transparent hover:bg-transparent shadow-transparent hover:text-tahiti-gold cursor-pointer">
               Services
             </a>
-            <a className="btn w-[70px] md:w-[100px] bg-transparent btn-xs border-transparent hover:border-transparent shadow-transparent hover:text-tahiti-gold hover:bg-transparent cursor-pointer">
+            <a className="btn w-[70px] md:w-[100px] font-['thedusCLR'] bg-transparent btn-xs text-2xl border-transparent hover:border-transparent shadow-transparent hover:text-tahiti-gold hover:bg-transparent cursor-pointer">
               Contact
             </a>
           </div>
-          <p className="flex items-center text-sm text-neutral-600">
+          <p className="flex items-center font-['thedusCLR'] text-2xl text-neutral-600">
             © {new Date().getFullYear()} Hoku 3D. All rights reserved.
           </p>
         </div>

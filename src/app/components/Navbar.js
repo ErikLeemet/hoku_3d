@@ -77,7 +77,7 @@ function Navbar() {
               <a onClick={() => smoothScroll("home")}>Home</a>
             </li>
             <li>
-              <a onClick={() => smoothScroll("About")}>About</a>
+              <a onClick={() => smoothScroll("about")}>About</a>
             </li>
             <li>
               <a onClick={() => smoothScroll("Services")}>Services</a>

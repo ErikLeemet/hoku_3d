@@ -29,12 +29,12 @@ const Contact = () => {
 
   return (
     <div id='contact' className="min-h-screen flex items-center justify-center bg-base-100 py-16">
-      <div className="bg-base-100 p-8 rounded-lg shadow-md w-full max-w-4xl xl:max-w-5xl">
+      <div className="bg-accent p-8 rounded-lg shadow-md w-full max-w-4xl xl:max-w-5xl">
         <h2 className="text-2xl font-bold mb-6 text-center font-['thedusWLB'] text-accent">Kontakt</h2>
         <div className="grid gap-8 lg:grid-cols-2 items-center">
           {/* Left text column */}
           <div className="p-6">
-            <h3 className="text-4xl font-['thedusWLB'] text-accent mb-4">Küsimusi? Kirjuta meile julgelt!</h3>
+            <h3 className="text-4xl font-['thedusWLB'] text-secondary mb-4">Küsimusi? Kirjuta meile julgelt!</h3>
             <p className="font-['thedusCLR'] text-lg text-secondary">Kui teil on küsimusi või soovite pakkumist, siis täitke allolev vorm ja saadame teile vastuse võimalikult kiiresti.</p>
           </div>
 
