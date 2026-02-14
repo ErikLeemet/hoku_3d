@@ -19,8 +19,8 @@ export default function Home() {
                 3D-printimine ja graveerimine sinu ideede elluviimiseks. Kujunda detaile, kohanda esemeid ja loo midagi ainulaadset.
               </p>
               <div className="gap-5 w-full flex justify-center">
-                <button className="btn btn-secondary min-w-[7.5rem] lg:max-w-[11.25rem] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">teenused</button>
-                <button className="btn btn-secondary min-w-[7.5rem] lg:max-w-[11.25rem] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">kontakt</button>
+                <button className="btn btn-secondary min-w-[7.5rem] text-xl pb-2 lg:max-w-[11.25rem] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">teenused</button>
+                <button className="btn btn-secondary min-w-[7.5rem] text-xl pb-2 lg:max-w-[11.25rem] min-h-[50px] flex-auto border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary">kontakt</button>
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

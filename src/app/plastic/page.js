@@ -8,15 +8,15 @@ const Plastic = () => {
       {/*title*/}
       <div className="flex gap-[1rem] items-center justify-center pt-10 pb-10 lg:pb-0">
         <div className="flex gap-[0.5rem]">
-          <div className="w-[8px] h-[40px] bg-secondary"></div>
-          <div className="w-[8px] h-[40px] bg-secondary"></div>
-          <div className="w-[8px] h-[40px] bg-secondary"></div>
+          <div className="w-[8px] h-[30px] bg-secondary"></div>
+          <div className="w-[8px] h-[30px] bg-secondary"></div>
+          <div className="w-[8px] h-[30px] bg-secondary"></div>
         </div>
-        <span className="font-[thedusCLB] text-3xl text-accent">Plastics</span>
+        <span className="font-[thedusCLB] text-4xl pb-4 text-accent">Plastikud</span>
         <div className="flex gap-[0.5rem]">
-          <div className="w-[8px] h-[40px] bg-secondary"></div>
-          <div className="w-[8px] h-[40px] bg-secondary"></div>
-          <div className="w-[8px] h-[40px] bg-secondary"></div>
+          <div className="w-[8px] h-[30px] bg-secondary"></div>
+          <div className="w-[8px] h-[30px] bg-secondary"></div>
+          <div className="w-[8px] h-[30px] bg-secondary"></div>
         </div>
       </div>
       <div className="flex flex-col lg:flex-row-reverse items-center justify-center">
@@ -70,21 +70,21 @@ const Plastic = () => {
             </svg>
           </div>
         </div>
-        <div className="font-[thedusCLR] text-lg text-secondary p-6 pl-0">
+        <div className="font-[thedusCLR] text-lg text-secondary p-5 pl-0">
           <div className="flex gap-4 items-center py-6">
             <svg
               width="20"
               height="20"
-              viewBox="0 0 24 21"
+              viewBox="0 0 26 14"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="fill-accent"
             >
               <path d="M10.268 19.5C11.0378 20.8333 12.9623 20.8333 13.7321 19.5L23.2583 3C24.0281 1.66667 23.0659 0 21.5263 0H2.47372C0.934118 0 -0.0281308 1.66667 0.74167 3L10.268 19.5Z" />
             </svg>
-            <h3 className="font-[thedusWLB] text-lg">filaments</h3>
+            <h3 className="font-[thedusWLB] text-2xl">filamendid</h3>
           </div>
-            <p>At Hoku3D, we offer three standard filament types and maintain a basic color selection of black and white. Any additional color requests will need to be specified by the customer and will incur extra charges.</p>
+            <p>Hoku3D pakub kolme standardfilamenditüüpi ja põhilisi värve nagu must ja valge. Lisavärvide soovid tuleb kliendil täpsustada ja nende eest tuleb maksta lisatasu.</p>
         </div>
         </div>
 
@@ -93,71 +93,71 @@ const Plastic = () => {
 
 
         <div className="flex flex-col lg:flex-row gap-6 justify-center items-center mb-10">
-            <div className="flex w-[280px] h-[460px] xl:w-[22rem] xl:h-[28,75rem] space-y-8 items-start flex-col rounded-xl bg-base-100 p-6 xl:p-8">
+            <div className="flex w-[280px] h-[490px] xl:w-[22rem] xl:h-[28,75rem] space-y-8 items-start flex-col rounded-xl bg-base-100 p-6 xl:p-8">
 
                 <h3 className="text-5xl font-[audiowide] min-w-full text-center py-5 text-secondary">PLA</h3>
 
                 <ul role="list" className="mb-8 space-y-4 text-left text-secondary">
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Eco-Friendly"/>
+                        <ProsConsItem type="pro" text="Keskkonnasõbralik"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Great detail"/>
+                        <ProsConsItem type="pro" text="Suurepärane detail"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Good for prototypes"/>
+                        <ProsConsItem type="pro" text="Sobib prototüüpide jaoks"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Good for decorative item"/>
+                        <ProsConsItem type="pro" text="Sobib dekoratiivesemetele"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="con" text="low heat resistance (softens at ~60°C)"/>
+                        <ProsConsItem type="con" text="Madal soojustaluvus (pehmeneb ~60°C juures)"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="con" text="Brittle compared to other plastics"/>
+                        <ProsConsItem type="con" text="Teiste plastmassidega võrreldes rabe"/>
                     </li>
                 </ul>
 
             </div>
-            <div className="flex w-[280px] h-[460px] xl:w-[22rem] xl:h-[28,75rem] space-y-8 items-start flex-col rounded-xl bg-base-100 p-6 xl:p-8">
+            <div className="flex w-[280px] h-[490px] xl:w-[22rem] xl:h-[28,75rem] space-y-8 items-start flex-col rounded-xl bg-base-100 p-6 xl:p-8">
 
                 <h3 className="text-5xl font-[audiowide] min-w-full text-center py-5 text-secondary">ABS</h3>
 
                 <ul role="list" className="mb-8 space-y-4 text-left text-secondary">
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Strong and durable"/>
+                        <ProsConsItem type="pro" text="Tugev ja vastupidav"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Higher heat resistance up to ~100°C"/>
+                        <ProsConsItem type="pro" text="Kõrge soojustaluvus kuni ~100°C"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Good for functional parts"/>
+                        <ProsConsItem type="pro" text="Sobib funktsionaalsete osade jaoks"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Good for car components"/>
+                        <ProsConsItem type="pro" text="Sobib autoosade jaoks"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="good for stronger prototypes"/>
+                        <ProsConsItem type="pro" text="Sobib tugevate prototüüpide jaoks"/>
                     </li>
                 </ul>
 
             </div>
-            <div className="flex w-[280px] h-[460px] xl:w-[22rem] xl:h-[28,75rem] çspace-y-8 items-start flex-col rounded-xl bg-base-100 p-6 xl:p-8">
+            <div className="flex w-[280px] h-[490px] xl:w-[22rem] xl:h-[28,75rem] space-y-8 items-start flex-col rounded-xl bg-base-100 p-6 xl:p-8">
 
                 <h3 className="text-5xl font-[audiowide] min-w-full text-center py-5 text-secondary">PETG</h3>
 
                 <ul role="list" className="mb-8 space-y-4 text-left text-secondary">
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Tough and flexible"/>
+                        <ProsConsItem type="pro" text="Tugev ja paindlik"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Chemical resistance (Withstands water and acids)"/>
+                        <ProsConsItem type="pro" text="Keemiline vastupidavus (talub vett ja happeid)"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Good for functional parts expose to stress, outdoor applications"/>
+                        <ProsConsItem type="pro" text="Sobib hästi pingele avatud funktsionaalsete osade ja välistingimustes kasutamiseks"/>
                     </li>
                     <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Good for decorative items"/>
+                        <ProsConsItem type="pro" text="Sobib dekoratiivesemetele"/>
                     </li>
                 </ul>
             </div>

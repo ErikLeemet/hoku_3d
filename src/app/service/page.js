@@ -4,23 +4,23 @@ import Servicecard from "../components/Servicecard.js";
 const Service = () => {
   return (
     <div id="services" className="h-[1600px] xl:h-[800px] py-12 flex relative flex-col items-center justify-center bg-base-100">
-      <div className="flex max-w-screen-xl mx-auto items-center justify-center px-4 py-8 lg:px-6 lg:py-16 ">
+      <div className="flex max-w-screen-xl text-xl mx-auto items-center justify-center px-4 py-8 lg:px-6 lg:py-16 ">
           <div className="space-y-8 gap-[10px] xl:gap-8 xl:grid lg:grid-cols-3 xl:space-y-0">
           <Servicecard
-        title={"3D PRINTING"}
+        title={"3D PRINTIMINE"}
         text={
-          "A process of creating three-dimensional objects from a digital file, layer by layer, using materials like plastic, resin, or metal."
+          "Digitaalsest failist kolmemõõtmeliste objektide loomise protsess, kiht kihi haaval, kasutades materjale nagu plastik, vaik või metall."
         }
       />
       <Servicecard
-        title={"ENGRAVING"}
+        title={"GRAVEERIMINE"}
         text={
-          "The process of carving designs, text, or patterns onto surfaces like metal, wood, or glass."
+          "Metalli, puidu või klaasi pinnale kujundite, teksti või mustrite graveerimise protsess."
         }
       />
-      <Servicecard title={"3D MODELING"} text={""}>
-        <div className="flex justify-center items-center flex-col min-h-16 w-full rounded-lg bg-base-200 font-['thedusWLR'] text-secondary text-2xl">
-          <span className="text-secondary text-2xl border-b-2 border-secondary relative before:absolute before:-inset-1 before:bg-secondary before:h-2 before:w-2 before:rounded-full before:top-[28px]">COMING SOON</span>
+      <Servicecard title={"3D MODELLEERIMINE"} text={""}>
+        <div className="flex justify-center items-center flex-col min-h-16 w-full rounded-lg bg-base-200 font-['thedusWLR'] text-secondary pb-2 text-2xl">
+          <span className="text-secondary text-2xl border-b-2 border-secondary relative before:absolute before:-inset-1 before:bg-secondary before:h-2 before:w-2 before:rounded-full before:top-[28px]">TULEKUL</span>
         </div>
       </Servicecard>
           </div>

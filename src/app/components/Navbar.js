@@ -74,16 +74,16 @@ function Navbar() {
             className="menu dropdown-content bg-nero rounded-md mr-1 text-xl"
           >
             <li>
-              <a onClick={() => smoothScroll("home")}>Home</a>
+              <a onClick={() => smoothScroll("home")}>Avaleht</a>
             </li>
             <li>
-              <a onClick={() => smoothScroll("about")}>About</a>
+              <a onClick={() => smoothScroll("about")}>Meist</a>
             </li>
             <li>
-              <a onClick={() => smoothScroll("Services")}>Services</a>
+              <a onClick={() => smoothScroll("Services")}>Teenused</a>
             </li>
             <li>
-              <a onClick={() => smoothScroll("Contact")}>Contact</a>
+              <a onClick={() => smoothScroll("Contact")}>Kontakt</a>
             </li>
             <li>
               <label className="swap swap-rotate">
@@ -121,25 +121,25 @@ function Navbar() {
             onClick={() => smoothScroll("home")}
             className="btn w-[100px] bg-transparent btn-xs border-transparent hover:border-transparent hover:bg-transparent shadow-transparent hover:text-tahiti-gold sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl cursor-pointer"
           >
-            Home
+            Avaleht
           </a>
           <a
             onClick={() => smoothScroll("about")}
             className="btn w-[100px] bg-transparent btn-xs border-transparent hover:border-transparent hover:bg-transparent shadow-transparent hover:text-tahiti-gold sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl cursor-pointer"
           >
-            About
+            Meist
           </a>
           <a
             onClick={() => smoothScroll("services")}
             className="btn w-[100px] bg-transparent btn-xs border-transparent hover:border-transparent hover:bg-transparent shadow-transparent hover:text-tahiti-gold sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl cursor-pointer"
           >
-            Services
+            Teenused
           </a>
           <a
             onClick={() => smoothScroll("contact")}
             className="btn w-[100px] bg-transparent btn-xs border-transparent hover:border-transparent shadow-transparent hover:text-tahiti-gold hover:bg-transparent sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  cursor-pointer"
           >
-            Contact
+            Kontakt
           </a>
           <label className="swap swap-rotate">
                 {/* this hidden checkbox controls the state */}

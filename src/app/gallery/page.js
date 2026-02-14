@@ -11,7 +11,7 @@ const Gallery = () => {
                 <div className="w-[4px] h-[40px] text-4xl bg-primary"></div>
             </div>
             <span className="font-[thedusCLB] text-3xl text-primary">
-              Gallery
+              Galerii
             </span>
           </div>
           </div>
@@ -19,7 +19,7 @@ const Gallery = () => {
         <div className="w-full mx-auto max-w-4xl">
             {/*text*/}
             <div className="font-[thedusCLR] text-lg text-secondary p-6 bg-base-100 rounded-md mb-4">
-                <p>These images showcase just a few examples of what can be 3D printed. From detailed prototypes to practical tools and artistic designs.</p>
+                <p>Need pildid näitavad vaid mõningaid näiteid sellest, mida on võimalik 3D-printida. Alates detailsetest prototüüpidest kuni praktiliste tööriistade ja kunstiliste disainideni.</p>
             </div>
         </div>
         <ImageSlider />
