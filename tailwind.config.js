@@ -8,7 +8,7 @@ module.exports = {
     daisyui: {
       themes: [
         {
-          bightspace: {
+          brightspace: {
             primary: "#F6FFEC",
 
             secondary: "#010101",

@@ -34,8 +34,8 @@ const Contact = () => {
         <div className="grid gap-8 lg:grid-cols-2 items-center">
           {/* Left text column */}
           <div className="p-6">
-            <h3 className="text-4xl font-['thedusWLB'] text-secondary mb-4">Küsimusi? Kirjuta meile julgelt!</h3>
-            <p className="font-['thedusCLR'] text-lg text-secondary">Kui teil on küsimusi või soovite pakkumist, siis täitke allolev vorm ja saadame teile vastuse võimalikult kiiresti.</p>
+            <h3 className="text-4xl font-['thedusWLB'] text-primary mb-4">Küsimusi? Kirjuta meile julgelt!</h3>
+            <p className="font-['thedusCLR'] text-lg text-primary">Kui teil on küsimusi või soovite pakkumist, siis täitke allolev vorm ja saadame teile vastuse võimalikult kiiresti.</p>
           </div>
 
           {/* Right form column (styled like site boxes) */}
@@ -50,7 +50,7 @@ const Contact = () => {
                   value={formData.title}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-secondary rounded-md focus:outline-none focus:ring-2 focus:ring-accent bg-base-100 text-neutral-900 placeholder:text-neutral-500"
+                  className="w-full px-3 py-2 border border-secondary rounded-md font-['thedusCLR'] focus:outline-none focus:ring-4 focus:ring-accent bg-base-100 text-accent placeholder:text-neutral-500"
                 />
               </div>
               <div className="mb-4">
@@ -62,7 +62,7 @@ const Contact = () => {
                   value={formData.fullName}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-secondary rounded-md focus:outline-none focus:ring-2 focus:ring-accent bg-base-100 text-neutral-900 placeholder:text-neutral-500"
+                  className="w-full px-3 py-2 border border-secondary rounded-md font-['thedusCLR'] focus:outline-none focus:ring-4 focus:ring-accent bg-base-100 text-accent placeholder:text-neutral-500"
                 />
               </div>
               <div className="mb-4">
@@ -74,7 +74,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-secondary rounded-md focus:outline-none focus:ring-2 focus:ring-accent bg-base-100 text-neutral-900 placeholder:text-neutral-500"
+                  className="w-full px-3 py-2 border border-secondary rounded-md focus:outline-none focus:ring-4 focus:ring-accent font-['thedusCLR'] bg-base-100 text-accent placeholder:text-neutral-500"
                 />
               </div>
               <div className="mb-4">
@@ -86,12 +86,12 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="6"
-                  className="w-full px-3 py-2 border border-secondary rounded-md focus:outline-none focus:ring-2 focus:ring-accent bg-base-100 text-neutral-900 placeholder:text-neutral-500"
+                  className="w-full px-3 py-2 border border-secondary rounded-md focus:outline-none focus:ring-4 font-['thedusCLR'] focus:ring-accent bg-base-100 text-accent placeholder:text-neutral-500"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="btn btn-secondary w-full min-h-[50px] border-0 text-primary font-['thedusCLR'] duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary"
+                className="btn btn-secondary w-full min-h-[50px] border-0 text-primary font-['thedusCLR'] font-['thedusCLR'] text-2xl pb-2 duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary"
               >
                 Saada
               </button>
