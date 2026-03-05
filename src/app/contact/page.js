@@ -91,7 +91,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="btn btn-secondary w-full min-h-[50px] border-0 text-primary font-['thedusCLR'] font-['thedusCLR'] text-2xl pb-2 duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary"
+                className="btn btn-secondary w-full min-h-[50px] border-0 text-primary font-['thedusCLR'] text-2xl pb-2 duration-300 ease-in-out hover:bg-primary hover:text-secondary hover:border-2 hover:border-secondary"
               >
                 Saada
               </button>
