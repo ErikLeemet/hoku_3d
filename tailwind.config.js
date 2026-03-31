@@ -1,20 +1,26 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+import { Tilt_Neon } from "next/font/google";
+
+export default {
+  darkMode: "class", // key part
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        "the-wave-dark": "url('/wave_dark.png')",
-      },
       colors: {
-        'tahiti-gold': '#E07126',
-        'nero': '#1E1E1E',
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // LIGHT THEME
+        title: "#FF7178",
+        neutral: "#010101",
+        primary: "#D4E7E3",
+        secondary: "#F6FFEC",
+        accent: "#FF7178",
+
+        // DARK THEME
+        dark: {
+          title: "#AE6821",
+          primary: "#1A1A1A",
+          secondary: "#FFFFFF",
+          accent: "#E3F449",
+          neutral: "#D7C957",
+        },
       },
     },
   },
