@@ -2,44 +2,44 @@ import React from "react";
 
 const Service = () => {
   return (
-    <div className="flex relative flex-col items-center justify-center font-[aino] rounded-b-[30px] min-h-[860px] bg-tahiti-gold">
-      <div className="flex max-w-screen-xl mx-auto items-center justify-center">
-        <div className=" px-4 py-8 lg:px-6 lg:py-16">
-          <div className="space-y-8  lg:grid md:grid-cols-3 lg:space-y-0 lg:gap-10">
-            <div className="mx-auto  flex max-w-lg space-y-8 items-start flex-col rounded-3xl bg-nero p-6 xl:p-8">
-              <div className="my-8 flex min-w-full items-baseline justify-center">
-                <span className="mr-2 text-4xl font-[audiowide]">
+    <div id="services" className="flex relative flex-col items-center justify-center font-thedusCLR rounded-b-[30px] min-h-screen sm:min-h-[600px] md:min-h-[700px] lg:min-h-[860px] bg-surface px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+      <div className="flex w-full max-w-7xl mx-auto items-center justify-center">
+        <div className="py-6 sm:py-8 lg:py-16 w-full">
+          <div className="space-y-6 sm:space-y-8 lg:grid md:grid-cols-3 lg:space-y-0 lg:gap-6 xl:gap-8">
+            <div className="flex max-w-lg space-y-6 sm:space-y-8 items-start flex-col rounded-3xl bg-panel p-6 sm:p-7 lg:p-8">
+              <div className="my-4 sm:my-6 lg:my-8 flex w-full items-baseline justify-center">
+                <span className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-thedusWLB text-body text-center">
                   3D PRINTING
                 </span>
               </div>
 
-              <p className="min-w-full xl:text-xl">
+              <p className="w-full text-sm sm:text-base lg:text-lg text-muted">
                 A process of creating three-dimensional objects from a digital
                 file, layer by layer, using materials like plastic, resin, or
                 metal.
               </p>
             </div>
-            <div className="mx-auto  flex max-w-lg space-y-8 items-start flex-col rounded-3xl bg-nero p-6 xl:p-8">
-              <div className="my-8 flex min-w-full items-baseline justify-center">
-                <span className="mr-2 text-4xl font-[audiowide]">
+            <div className="flex max-w-lg space-y-6 sm:space-y-8 items-start flex-col rounded-3xl bg-panel p-6 sm:p-7 lg:p-8">
+              <div className="my-4 sm:my-6 lg:my-8 flex w-full items-baseline justify-center">
+                <span className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-thedusWLB text-body text-center">
                   3D PRINTING
                 </span>
               </div>
 
-              <p className="min-w-full xl:text-xl">
+              <p className="w-full text-sm sm:text-base lg:text-lg text-muted">
                 A process of creating three-dimensional objects from a digital
                 file, layer by layer, using materials like plastic, resin, or
                 metal.
               </p>
             </div>
-            <div className="mx-auto  flex max-w-lg space-y-8 items-start flex-col rounded-3xl bg-nero p-6 xl:p-8">
-              <div className="my-8 flex min-w-full items-baseline justify-center">
-                <span className="mr-2 text-4xl font-[audiowide]">
+            <div className="flex max-w-lg space-y-6 sm:space-y-8 items-start flex-col rounded-3xl bg-panel p-6 sm:p-7 lg:p-8">
+              <div className="my-4 sm:my-6 lg:my-8 flex w-full items-baseline justify-center">
+                <span className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-thedusWLB text-body text-center">
                   3D PRINTING
                 </span>
               </div>
 
-              <p className="min-w-full xl:text-xl">
+              <p className="w-full text-sm sm:text-base lg:text-lg text-muted">
                 A process of creating three-dimensional objects from a digital
                 file, layer by layer, using materials like plastic, resin, or
                 metal.
@@ -48,8 +48,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div className="w-[500px] h-[60px] bottom-0 absolute rounded-t-[30px] bg-nero">
-        <div className="relative before:absolute before:top-[20px] before:rounded-br-[30px] before:left-[-40px] before:bg-tahiti-gold before:h-[40px] before:w-[40px] before:shadow-[3px_15px_0px_1px_rgba(30,_30,_30,_1)] after:absolute after:top-[20px] after:rounded-bl-[30px] after:right-[-40px] after:bg-tahiti-gold after:h-[40px] after:w-[40px] after:shadow-[-3px_15px_0px_1px_rgba(30,_30,_30,_1)]"></div>
+      <div className="w-4/5 sm:w-3/4 md:w-1/2 h-[40px] sm:h-[50px] lg:h-[60px] bottom-0 absolute rounded-t-[30px] bg-surface-2">
       </div>
     </div>
   );

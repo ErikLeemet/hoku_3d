@@ -30,42 +30,42 @@ export default function ImageCarousel() {
   }, [isHovered]);
 
   return (
-    <div>
-    <div
-      className="relative min-h-full w-full max-w-4xl mx-auto rounded-md overflow-hidden"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <motion.div
-        className="flex"
-        animate={{ x: `-${currentIndex * 100}%` }}
-        transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+    <div className="mx-auto w-full max-w-4xl px-4 py-4 sm:px-0 sm:py-6">
+      <div
+        className="relative min-h-[220px] sm:min-h-[320px] md:min-h-[400px] lg:min-h-[500px] w-full overflow-hidden rounded-2xl sm:rounded-[1.75rem] bg-panel/80 border border-panel"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        {images.map((src, index) => (
-          <div key={index} className="min-w-full">
-            <Image
-              src={src}
-              alt={`Slide ${index + 1}`}
-              width={1000}
-              height={750}
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        ))}
-      </motion.div>
+        <motion.div
+          className="flex h-full"
+          animate={{ x: `-${currentIndex * 100}%` }}
+          transition={{ type: 'spring', stiffness: 200, damping: 25 }}
+        >
+          {images.map((src, index) => (
+            <div key={index} className="min-w-full">
+              <Image
+                src={src}
+                alt={`Slide ${index + 1}`}
+                width={1000}
+                height={750}
+                className="h-[220px] sm:h-[320px] md:h-[400px] lg:h-[500px] w-full object-cover"
+              />
+            </div>
+          ))}
+        </motion.div>
 
-      {/* Clickable Areas for Navigation */}
-      <div className="absolute left-0 top-0 h-full w-1/2 cursor-pointer bg-transparent" onClick={prevSlide}></div>
-      <div className="absolute right-0 top-0 h-full w-1/2 cursor-pointer bg-transparent" onClick={nextSlide}></div>
-    </div>
-    {/* Indicator Dots */}
-    <div className="flex justify-center gap-2 mt-4">
+        <div className="absolute inset-y-0 left-0 w-1/2 cursor-pointer bg-transparent" onClick={prevSlide} />
+        <div className="absolute inset-y-0 right-0 w-1/2 cursor-pointer bg-transparent" onClick={nextSlide} />
+      </div>
+
+      <div className="flex justify-center gap-2 sm:gap-3 mt-3 sm:mt-4">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-sm ${currentIndex === index ? 'bg-secondary' : 'bg-base-100'}`}
-          ></button>
+            className={`h-2.5 sm:h-3 w-2.5 sm:w-3 rounded-full transition ${currentIndex === index ? 'bg-accent' : 'bg-panel'}`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
         ))}
       </div>
     </div>

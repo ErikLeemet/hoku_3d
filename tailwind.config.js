@@ -1,33 +1,31 @@
-import { Tilt_Neon } from "next/font/google";
-
 export default {
-  darkMode: "class", // key part
+  darkMode: "class",
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        // LIGHT THEME
-        title: "#FF7178",
-        neutral: "#010101",
-        primary: "#D4E7E3",
-        secondary: "#F6FFEC",
-        accent: "#FF7178",
-
-        // DARK THEME
+        title: "#e86f67",
+        muted: "#475569",
+        primary: "#e6f2ef",
+        secondary: "#bcc7a5",
+        accent: "#e86f67",
+        panel: "#ffffff",
+        border: "#c7d2dc",
         dark: {
-          title: "#AE6821",
-          primary: "#1A1A1A",
-          secondary: "#FFFFFF",
-          accent: "#E3F449",
-          neutral: "#D7C957",
+          title: "#b68235",
+          primary: "#1e120f",
+          secondary: "#bcc7a5",
+          accent: "#b68235",
+          muted: "#dfe6c0",
+          panel: "#22120f",
+          border: "#4a3a2f",
         },
       },
-      // FONTS
       fontFamily: {
-        thedusCLR: ["thedusCLRegular", "sans-serif"],
-        thedusCLB: ["thedusCLBold", "sans-serif"],
-        thedusWLR: ["thedusWLRegular", "sans-serif"],
-        thedusWLB: ["thedusWLBold", "sans-serif"],
+        thedusCLR: ["thedusCLR"],
+        thedusCLB: ["thedusCLB"],
+        thedusWLR: ["thedusWLR"],
+        thedusWLB: ["thedusWLB"],
       },
     },
   },

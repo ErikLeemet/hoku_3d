@@ -4,7 +4,7 @@ const ProsConsItem = ({ type, text }) => {
   return (
     <div
       className={`flex items-start gap-3 w-full ${
-        type === "pro" ? "text-scondary" : "text-accent"
+        type === "pro" ? "text-muted" : "text-accent"
       }`}
     >
       <div className="text-2xl mt-0.5">
@@ -21,7 +21,7 @@ const ProsConsItem = ({ type, text }) => {
                 width="32"
                 height="32"
                 rx="16"
-                className="fill-secondary"
+                className="fill-accent"
               />
               <path
                 className="fill-primary"
@@ -53,7 +53,7 @@ const ProsConsItem = ({ type, text }) => {
           </div>
         )}
       </div>
-      <p className="font-['aino'] flex-1">{text}</p>
+      <p className="font-thedusCLR flex-1">{text}</p>
     </div>
   );
 };

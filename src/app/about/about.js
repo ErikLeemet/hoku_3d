@@ -2,8 +2,8 @@ import React from "react";
 
 const about = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full min-h-screen py-12 bg-primary">
-      <div className="min-h-full w-full max-w-4xl px-6 mx-auto">
+    <div id="about" className="flex flex-col justify-center items-center w-full min-h-screen py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 bg-surface-2">
+      <div className="min-h-full w-full max-w-5xl">
 
         {/*Title and description*/}
 
@@ -24,7 +24,7 @@ const about = () => {
             </h3>
           </div>
 
-          <p className="flex items-center justify-center font-[thedusCLR] text-2xl text-secondary">
+          <p className="flex items-center justify-center font-[thedusCLR] text-2xl text-muted">
             Hoku3D on väike 3D-printimisteenuse pakkuja Saaremaal. Meie
             spetsialiseerume tellimusel valmistatavatele printidele, kasutades piiratud valikut
             kõrgekvaliteedilisi mustvalgeid filamente. Kliendid võivad lisatasu eest tellida ka
@@ -47,7 +47,7 @@ const about = () => {
           >
             <path d="M10.6769 9.58805C12.6318 4.92807 19.3497 3.69622 22.8337 7.39505C26.3507 10.6676 25.4352 17.0942 21.174 19.2609C21.5747 16.6394 20.6899 13.9313 18.9172 12.0802C16.8876 9.87299 13.6022 8.88225 10.6769 9.58695V9.58805ZM20.1444 17.994C20.1466 15.1215 18.5154 12.5526 16.0017 11.2857C17.1082 17.0208 11.566 22.4413 5.81304 21.1689C7.03037 23.7499 9.58798 25.4629 12.5473 25.4979C16.6779 25.5977 20.2004 22.0665 20.1433 17.994H20.1444ZM11.0007 16.4454C6.26748 15.6267 3.00627 10.6127 4.23019 5.93085C-0.351538 7.91671 -1.47338 14.648 2.16324 18.0093C5.43763 21.478 11.6966 20.6517 13.9677 16.4936C13.004 16.6482 11.9546 16.6284 11.0018 16.4454H11.0007ZM5.10943 7.97152C5.10943 10.7793 6.66265 13.2956 9.08633 14.5943C7.60885 8.75731 13.2103 2.93671 19.1433 4.22884C15.3541 -2.37426 5.09297 0.362346 5.10943 7.97262V7.97152Z" />
           </svg>
-          <h3 className="font-[thedusWLB] text-secondary flex items-center text-xl">
+          <h3 className="font-[thedusWLB] text-muted flex items-center text-xl">
             Meie tiim
           </h3>
         </div>
@@ -82,7 +82,7 @@ const about = () => {
                     <path d="M30.5 1.33591C30.5 0.873937 30.1229 0.5 29.6593 0.5C29.1956 0.5 28.8185 0.874883 28.8185 1.33591V40.8272H27.356V0.5H22.5106V40.8272H21.0672V0.5H16.2217V40.8272H14.7783V0.5H9.93285V40.8272H8.4894V0.5H3.64396V40.8272H2.18148V1.33591C2.18148 0.873937 1.80539 0.5 1.34075 0.5C0.876102 0.5 0.5 0.874883 0.5 1.33591V42.5H4.48566H5.34544V2.17277H6.78888V42.5H7.64867H10.7736H11.6324V2.17277H13.0759V42.5H13.9356H17.0606H17.9203V2.17277H19.3638V42.5H20.2236H23.3485H24.2083V2.17277H25.6517V42.5H26.5115H30.4962V1.33591H30.5Z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-[thedusWLB] text-center text-secondary">
+                <h3 className="text-lg font-[thedusWLB] text-center text-muted">
                   Erik Leemet
                 </h3>
                 <div className="w-[30px] h-[40px]">
@@ -170,7 +170,7 @@ const about = () => {
                     <path d="M30.5 1.33591C30.5 0.873937 30.1229 0.5 29.6593 0.5C29.1956 0.5 28.8185 0.874883 28.8185 1.33591V40.8272H27.356V0.5H22.5106V40.8272H21.0672V0.5H16.2217V40.8272H14.7783V0.5H9.93285V40.8272H8.4894V0.5H3.64396V40.8272H2.18148V1.33591C2.18148 0.873937 1.80539 0.5 1.34075 0.5C0.876102 0.5 0.5 0.874883 0.5 1.33591V42.5H4.48566H5.34544V2.17277H6.78888V42.5H7.64867H10.7736H11.6324V2.17277H13.0759V42.5H13.9356H17.0606H17.9203V2.17277H19.3638V42.5H20.2236H23.3485H24.2083V2.17277H25.6517V42.5H26.5115H30.4962V1.33591H30.5Z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-[thedusWLB] text-center text-secondary">
+                <h3 className="text-lg font-[thedusWLB] text-center text-muted">
                   Marcus Riisik
                 </h3>
                 <div className="w-[30px] h-[40px]">

@@ -1,3 +1,4 @@
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata = {
@@ -7,25 +8,42 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-    <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              const savedTheme = localStorage.getItem("theme");
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`(function() {
+            try {
+              var savedTheme = localStorage.getItem("theme");
+              var prefersDarkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+              var isDark = savedTheme
+                ? savedTheme === "dark"
+                : prefersDarkQuery.matches;
 
-              if (savedTheme) {
-                document.documentElement.classList.toggle("dark", savedTheme === "dark");
-              } else {
-                const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-                document.documentElement.classList.toggle("dark", prefersDark);
+              document.documentElement.classList.toggle("dark", isDark);
+              window.__currentTheme = isDark ? "dark" : "light";
+
+              function setPreferredTheme(event) {
+                if (!localStorage.getItem("theme")) {
+                  document.documentElement.classList.toggle("dark", event.matches);
+                  window.__currentTheme = event.matches ? "dark" : "light";
+                }
               }
-            `,
-          }}
-        />
+
+              if (!savedTheme) {
+                if (prefersDarkQuery.addEventListener) {
+                  prefersDarkQuery.addEventListener("change", setPreferredTheme);
+                } else if (prefersDarkQuery.addListener) {
+                  prefersDarkQuery.addListener(setPreferredTheme);
+                }
+              }
+            } catch (e) {
+              console.error(e);
+            }
+          })();`}
+        </Script>
       </head>
       <body>
-        <main className="max-w-8xl mx-auto" >{children}</main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );
