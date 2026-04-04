@@ -22,7 +22,7 @@ const contact = () => {
           href="mailto:info@hoku3d.com?subject=Hoku3D%20päringu%20saaja&body=Tere%20Hoku3D%2C%0A%0AMul%20on%20küsimus%20seoses%20..."
           className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-base font-semibold text-white transition hover:bg-[#ff5c69]"
         >
-          Saada kirja
+          Saada meile kiri
         </a>
       </div>
     </div>
