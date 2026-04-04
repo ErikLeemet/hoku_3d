@@ -9,40 +9,34 @@ const Service = () => {
             <div className="flex max-w-lg space-y-6 sm:space-y-8 items-start flex-col rounded-3xl bg-panel p-6 sm:p-7 lg:p-8">
               <div className="my-4 sm:my-6 lg:my-8 flex w-full items-baseline justify-center">
                 <span className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-thedusWLB text-body text-center">
-                  3D PRINTING
+                  3D PRINTIMINE
                 </span>
               </div>
 
               <p className="w-full text-sm sm:text-base lg:text-lg text-muted">
-                A process of creating three-dimensional objects from a digital
-                file, layer by layer, using materials like plastic, resin, or
-                metal.
+                Protsess, mille käigus luuakse digitaalfaili põhjal kiht-kiht haaval kolmemõõtmelisi objekte, kasutades selleks materjale nagu plast, vaik või metall.
               </p>
             </div>
             <div className="flex max-w-lg space-y-6 sm:space-y-8 items-start flex-col rounded-3xl bg-panel p-6 sm:p-7 lg:p-8">
               <div className="my-4 sm:my-6 lg:my-8 flex w-full items-baseline justify-center">
                 <span className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-thedusWLB text-body text-center">
-                  3D PRINTING
+                  GRAVEERIMINE
                 </span>
               </div>
 
               <p className="w-full text-sm sm:text-base lg:text-lg text-muted">
-                A process of creating three-dimensional objects from a digital
-                file, layer by layer, using materials like plastic, resin, or
-                metal.
+                Motiivide, teksti või mustrite graveerimine sellistele pindadele nagu metall, puit või klaas.
               </p>
             </div>
             <div className="flex max-w-lg space-y-6 sm:space-y-8 items-start flex-col rounded-3xl bg-panel p-6 sm:p-7 lg:p-8">
               <div className="my-4 sm:my-6 lg:my-8 flex w-full items-baseline justify-center">
                 <span className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-thedusWLB text-body text-center">
-                  3D PRINTING
+                  3D-modelleerimine
                 </span>
               </div>
 
-              <p className="w-full text-sm sm:text-base lg:text-lg text-muted">
-                A process of creating three-dimensional objects from a digital
-                file, layer by layer, using materials like plastic, resin, or
-                metal.
+              <p className="w-full text-2xl sm:text-base lg:text-2xl text-muted text-center">
+                VARSTI TULEKUL!
               </p>
             </div>
           </div>
