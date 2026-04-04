@@ -22,6 +22,13 @@ export default {
           neutral: "#D7C957",
         },
       },
+      // FONTS
+      fontFamily: {
+        thedusCLR: ["thedusCLRegular", "sans-serif"],
+        thedusCLB: ["thedusCLBold", "sans-serif"],
+        thedusWLR: ["thedusWLRegular", "sans-serif"],
+        thedusWLB: ["thedusWLBold", "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -16,7 +16,7 @@ export default function Home() {
         <div className="hero bg-base-100 flex-1 max-w-[260px] lg:max-w-[1000px]">
           <div className="hero-content p-0">
             <div className="max-w-md lg:max-w-[1000px] flex flex-col items-center justify-center">
-              <h1 className="text-2xl font-bold font-['thedusWLB'] text-accent lg:text-5xl lg:whitespace-nowrap">
+              <h1 className="font-thedusCLB text-2xl text-accent lg:text-5xl lg:whitespace-nowrap">
                 Täpsus ja kvaliteet igas detailis
               </h1>
               <p className="py-6 font-['thedusCLR'] text-neutral lg:text-2xl lg:text-center lg:max-w-[550px]">
