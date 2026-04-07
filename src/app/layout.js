@@ -1,5 +1,28 @@
 import Script from "next/script";
+import localFont from "next/font/local";
+import Navbar from "./components/Navbar.js";
+import "@fontsource/cascadia-mono";
 import "./globals.css";
+
+const thedusCLRegular = localFont({
+  src: "../../public/fonts/ThedusCondensedLight-Regular.otf",
+  variable: "--font-thedus-clr",
+});
+
+const thedusCLBold = localFont({
+  src: "../../public/fonts/ThedusCondensedLight-Bold.otf",
+  variable: "--font-thedus-clb",
+});
+
+const thedusWLRegular = localFont({
+  src: "../../public/fonts/ThedusWideLight-Regular.otf",
+  variable: "--font-thedus-wlr",
+});
+
+const thedusWLBold = localFont({
+  src: "../../public/fonts/ThedusWideLight-Bold.otf",
+  variable: "--font-thedus-wlb",
+});
 
 export const metadata = {
   title: "Hoku 3D site",
@@ -8,7 +31,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${thedusCLRegular.variable} ${thedusCLBold.variable} ${thedusWLRegular.variable} ${thedusWLBold.variable}`}
+    >
       <head>
         <Script id="theme-init" strategy="beforeInteractive">
           {`(function() {
@@ -42,7 +69,8 @@ export default function RootLayout({ children }) {
           })();`}
         </Script>
       </head>
-      <body>
+      <body className="bg-primary">
+        <Navbar />
         <main className="w-full">{children}</main>
       </body>
     </html>

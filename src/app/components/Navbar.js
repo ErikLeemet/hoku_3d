@@ -22,7 +22,9 @@ function Navbar() {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    const currentTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+    const currentTheme = document.documentElement.classList.contains("dark")
+      ? "dark"
+      : "light";
     setTheme(currentTheme);
 
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -74,7 +76,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`responsive sticky top-4 z-50 mx-auto flex w-full items-center justify-between rounded-full border px-3 py-5 sm:px-4 sm:py-6 transition-all duration-300 ${
+      className={`responsive sticky top-4 z-50 mx-auto flex w-full items-center justify-between rounded-md border px-3 py-5 sm:px-4 sm:py-6 transition-all duration-300 ${
         scrolled
           ? "bg-gradient-to-r from-white/40 via-white/30 to-white/40 dark:from-black/40 dark:via-black/30 dark:to-black/40 backdrop-blur-3xl shadow-2xl border-white/20 dark:border-white/10"
           : "bg-gradient-to-r from-white/30 via-white/20 to-white/30 dark:from-black/30 dark:via-black/20 dark:to-black/30 backdrop-blur-3xl shadow-lg border-white/10 dark:border-white/5"
@@ -92,18 +94,18 @@ function Navbar() {
           </svg>
         </div>
         <div className="hidden sm:flex flex-col justify-center">
-          <span className="font-[thedusCLB] text-xl md:text-3xl lg:text-4xl text-body leading-none font-light tracking-wider">
+          <span className="font-thedusCLB text-xl md:text-3xl lg:text-4xl text-body leading-none font-light tracking-wider">
             Hoku<span className="text-accent">3D</span>
           </span>
         </div>
       </div>
       {isMobile ? (
         <div className="flex items-center gap-3">
-          <div className="dropdown dropdown-end">
+          <div className="">
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost p-0 m-1 bg-transparent hover:bg-transparent shadow-none border-none"
+              className="p-0 m-1 bg-transparent hover:bg-transparent shadow-none border-none"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,13 +124,13 @@ function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu dropdown-content rounded-xl bg-panel/95 p-4 shadow-xl"
+              className="rounded-xl bg-panel/95 p-4 shadow-xl"
             >
               {links.map((link) => (
                 <li key={link.href}>
                   <button
                     onClick={() => smoothScroll(link.href)}
-                    className="text-left text-lg sm:text-xl font-medium text-body hover:text-accent"
+                    className="font-thedusCLR text-left text-lg sm:text-xl font-medium text-body hover:text-accent"
                   >
                     {link.label}
                   </button>
@@ -142,14 +144,22 @@ function Navbar() {
             aria-label="Toggle theme"
           >
             {theme === "dark" ? (
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="h-5 w-5"
+              >
                 <path
                   fill="currentColor"
                   d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79Z"
                 />
               </svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="h-5 w-5"
+              >
                 <path
                   fill="currentColor"
                   d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0 2a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"
@@ -165,7 +175,7 @@ function Navbar() {
               <button
                 key={link.href}
                 onClick={() => smoothScroll(link.href)}
-                className="text-base sm:text-lg md:text-xl font-medium text-body transition hover:text-accent"
+                className="text-base sm:text-lg md:text-xl font-medium font-thedusCLR text-body transition hover:text-accent"
               >
                 {link.label}
               </button>
@@ -177,14 +187,22 @@ function Navbar() {
             aria-label="Toggle theme"
           >
             {theme === "dark" ? (
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="h-5 w-5"
+              >
                 <path
                   fill="currentColor"
                   d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79Z"
                 />
               </svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="h-5 w-5"
+              >
                 <path
                   fill="currentColor"
                   d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0 2a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"
