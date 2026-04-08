@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn {
-  @apply bg-neutral w-[180px] h-[50px] rounded-[15px] text-secondary border-0 duration-300 ease-in-out hover:bg-primary hover:text-neutral hover:border-[3px] hover:border-neutral;
+  @apply bg-neutral w-[180px] h-[50px] rounded-[15px] text-secondary border-[3px] border-neutral duration-300 ease-in-out hover:bg-secondary hover:text-neutral;
 }
 
 :root {
@@ -17,11 +17,11 @@
 
 .dark {
   --color-title: #AE6821;
-  --color-neutral: #D7C957;
-  --color-primary: #1A1A1A;
-  --color-secondary: #FFFFFF;
-  --color-accent: #E3F449;
-  --shadow-custom: 5px 5px rgba(255, 113, 120, 0.2), 10px 10px rgba(255, 113, 120, 0.15), 15px 15px rgba(255, 113, 120, 0.1), 20px 20px rgba(255, 113, 120, 0.08), 25px 25px rgba(255, 113, 120, 0.05);
+  --color-neutral: #F6FFEC;
+  --color-primary: #351A1A;
+  --color-secondary: #412424;
+  --color-accent: #AE6821;
+  --shadow-custom: 5px 5px rgba(174, 104, 33, 0.4), 10px 10px rgba(174, 104, 33, 0.3), 15px 15px rgba(174, 104, 33, 0.2), 20px 20px rgba(174, 104, 33, 0.1), 25px 25px rgba(174, 104, 33, 0.05);
 }
 
 
