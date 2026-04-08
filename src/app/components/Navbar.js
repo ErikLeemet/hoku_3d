@@ -94,7 +94,7 @@ function Navbar() {
           </svg>
         </div>
         <div className="hidden sm:flex flex-col justify-center">
-          <span className="font-thedusCLB text-xl md:text-3xl lg:text-4xl text-body leading-none font-light tracking-wider">
+          <span className="font-thedusCLB text-xl md:text-3xl lg:text-4xl text-neutral leading-none font-light tracking-wider">
             Hoku<span className="text-accent">3D</span>
           </span>
         </div>
@@ -122,15 +122,12 @@ function Navbar() {
                 />
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="rounded-xl bg-panel/95 p-4 shadow-xl"
-            >
+            <ul tabIndex={0} className="rounded-xl bg-panel/95 p-4 shadow-xl">
               {links.map((link) => (
                 <li key={link.href}>
                   <button
                     onClick={() => smoothScroll(link.href)}
-                    className="font-thedusCLR text-left text-lg sm:text-xl font-medium text-body hover:text-accent"
+                    className="font-thedusCLR text-left text-lg sm:text-xl font-medium text-neutral hover:text-accent"
                   >
                     {link.label}
                   </button>
@@ -138,9 +135,10 @@ function Navbar() {
               ))}
             </ul>
           </div>
+          {/* COLOR TOGGLE BUTTON */}
           <button
             onClick={toggleTheme}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 dark:border-white/10 bg-gradient-to-r from-white/20 to-white/10 dark:from-black/20 dark:to-black/10 text-body transition hover:bg-gradient-to-r hover:from-white/40 hover:to-white/30 dark:hover:from-black/40 dark:hover:to-black/30 backdrop-blur-md"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 dark:border-white/10 bg-gradient-to-r from-white/20 to-white/10 dark:from-black/20 dark:to-black/10 text-neutral transition hover:bg-gradient-to-r hover:from-white/40 hover:to-white/30 dark:hover:from-black/40 dark:hover:to-black/30 backdrop-blur-md"
             aria-label="Toggle theme"
           >
             {theme === "dark" ? (
@@ -175,15 +173,16 @@ function Navbar() {
               <button
                 key={link.href}
                 onClick={() => smoothScroll(link.href)}
-                className="text-base sm:text-lg md:text-xl font-medium font-thedusCLR text-body transition hover:text-accent"
+                className="text-base sm:text-lg md:text-xl font-medium font-thedusCLR text-neutral transition hover:text-accent"
               >
                 {link.label}
               </button>
             ))}
           </div>
+          {/* COLOR TOGGLE BUTTON */}
           <button
             onClick={toggleTheme}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 dark:border-white/10 bg-gradient-to-r from-white/20 to-white/10 dark:from-black/20 dark:to-black/10 text-body transition hover:bg-gradient-to-r hover:from-white/40 hover:to-white/30 dark:hover:from-black/40 dark:hover:to-black/30 backdrop-blur-md"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 dark:border-white/10 bg-gradient-to-r from-white/20 to-white/10 dark:from-black/20 dark:to-black/10 text-neutral transition hover:bg-gradient-to-r hover:from-white/40 hover:to-white/30 dark:hover:from-black/40 dark:hover:to-black/30 backdrop-blur-md"
             aria-label="Toggle theme"
           >
             {theme === "dark" ? (
