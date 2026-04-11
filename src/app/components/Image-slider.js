@@ -32,7 +32,7 @@ export default function ImageCarousel() {
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-4 sm:px-0 sm:py-6">
       <div
-        className="relative min-h-[220px] sm:min-h-[320px] md:min-h-[400px] lg:min-h-[500px] w-full overflow-hidden rounded-2xl sm:rounded-[1.75rem] bg-panel/80 border border-panel"
+        className="relative min-h-[220px] sm:min-h-[320px] md:min-h-[400px] lg:min-h-[500px] w-full overflow-hidden rounded-[10px] sm:rounded-[1.75rem] bg-secondary"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -63,7 +63,7 @@ export default function ImageCarousel() {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`h-2.5 sm:h-3 w-2.5 sm:w-3 rounded-full transition ${currentIndex === index ? 'bg-accent' : 'bg-panel'}`}
+            className={`h-2.5 sm:h-3 w-2.5 sm:w-3 rounded-full transition ${currentIndex === index ? 'bg-accent' : 'bg-neutral'}`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
