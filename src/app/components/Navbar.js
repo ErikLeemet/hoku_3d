@@ -76,11 +76,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`responsive sticky top-4 z-50 mx-auto flex w-full items-center justify-between rounded-md border px-3 py-5 sm:px-4 sm:py-6 transition-all duration-300 ${
-        scrolled
-          ? "bg-gradient-to-r from-white/40 via-white/30 to-white/40 dark:from-black/40 dark:via-black/30 dark:to-black/40 backdrop-blur-3xl shadow-2xl border-white/20 dark:border-white/10"
-          : "bg-gradient-to-r from-white/30 via-white/20 to-white/30 dark:from-black/30 dark:via-black/20 dark:to-black/30 backdrop-blur-3xl shadow-lg border-white/10 dark:border-white/5"
-      }`}
+      className="responsive sticky top-0 z-50 mx-auto flex w-full items-center justify-between px-3 py-5 sm:px-4 sm:py-6 transition-all duration-300"
     >
       <div className="flex items-center gap-2 sm:gap-3">
         <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-2xl bg-accent/15 text-accent">
@@ -168,7 +164,7 @@ function Navbar() {
         </div>
       ) : (
         <div className="flex items-center gap-4 lg:gap-6">
-          <div className="flex flex-wrap items-center justify-center gap-3 lg:gap-6">
+          <div className="flex flex-wrap items-center justify-center bg-title/50 backdrop-blur-3xl shadow-2xl p-2 rounded-[10px] gap-3 lg:gap-6">
             {links.map((link) => (
               <button
                 key={link.href}
