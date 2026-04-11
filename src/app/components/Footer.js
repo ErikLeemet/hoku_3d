@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <div className="w-full h-full bg-surface-2">
       <footer className="flex flex-col w-full mx-auto max-w-6xl py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:justify-between items-center border-b-2 border-panel pb-4 sm:pb-6 gap-4 sm:gap-6">
-          <h1 className="text-lg sm:text-2xl md:text-3xl font-['thedusWLB'] text-accent text-center md:text-left">
+        <div className="flex flex-col md:flex-row md:justify-between items-center border-b-2 border-neutral pb-4 sm:pb-6 gap-4 sm:gap-6">
+          <h1 className="text-lg sm:text-2xl md:text-3xl font-thedusWLB text-accent text-center md:text-left">
             Täpsus ja kvaliteet igas detailis
           </h1>
           <div className="flex items-center gap-2 text-sm sm:text-base">
@@ -26,25 +26,25 @@ const Footer = () => {
                 d="M12.0805 21.385C11.993 21.385 11.9055 21.35 11.8355 21.28C11.6955 21.14 11.6955 20.93 11.8355 20.79L15.458 17.1675C15.598 17.0275 15.808 17.0275 15.948 17.1675C16.088 17.3075 16.088 17.5175 15.948 17.6575L12.343 21.28C12.273 21.35 12.168 21.385 12.0805 21.385ZM23.2105 21.385C23.123 21.385 23.0355 21.35 22.9655 21.28L19.343 17.6575C19.203 17.5175 19.203 17.3075 19.343 17.1675C19.483 17.0275 19.693 17.0275 19.833 17.1675L23.4555 20.79C23.5955 20.93 23.5955 21.14 23.4555 21.28C23.3855 21.35 23.298 21.385 23.2105 21.385Z"
               />
             </svg>
-            <a className="text-xl sm:text-xl font-thedusCLR">info@hoku3d.com</a>
+            <a className="text-xl sm:text-xl font-thedusCLR text-neutral">info@hoku3d.com</a>
           </div>
         </div>
         <div className="flex flex-col md:flex-row md:justify-between pb-2 items-center gap-4 sm:gap-6">
           <div className="flex gap-1 sm:gap-2 justify-center md:justify-start items-center py-4 sm:py-5 flex-wrap">
-            <button className="px-3 sm:px-4 py-1 sm:py-2 font-['thedusCLR'] text-sm sm:text-lg md:text-xl lg:text-2xl text-body transition hover:text-accent">
+            <button className="px-3 sm:px-4 py-1 sm:py-2 font-thedusCLR text-sm sm:text-lg md:text-xl lg:text-2xl text-neutral transition hover:text-accent">
               Avaleht
             </button>
-            <button className="px-3 sm:px-4 py-1 sm:py-2 font-['thedusCLR'] text-sm sm:text-lg md:text-xl lg:text-2xl text-body transition hover:text-accent">
+            <button className="px-3 sm:px-4 py-1 sm:py-2 font-thedusCLR text-sm sm:text-lg md:text-xl lg:text-2xl text-neutral transition hover:text-accent">
               Meist
             </button>
-            <button className="px-3 sm:px-4 py-1 sm:py-2 font-['thedusCLR'] text-sm sm:text-lg md:text-xl lg:text-2xl text-body transition hover:text-accent">
+            <button className="px-3 sm:px-4 py-1 sm:py-2 font-thedusCLR text-sm sm:text-lg md:text-xl lg:text-2xl text-neutral transition hover:text-accent">
               Teenused
             </button>
-            <button className="px-3 sm:px-4 py-1 sm:py-2 font-['thedusCLR'] text-sm sm:text-lg md:text-xl lg:text-2xl text-body transition hover:text-accent">
+            <button className="px-3 sm:px-4 py-1 sm:py-2 font-thedusCLR text-sm sm:text-lg md:text-xl lg:text-2xl text-neutral transition hover:text-accent">
               Kontakt
             </button>
           </div>
-          <p className="flex items-center font-['thedusCLR'] text-xs sm:text-sm md:text-lg text-muted text-center md:text-right">
+          <p className="flex items-center font-thedusCLR text-xs sm:text-sm md:text-lg text-neutral text-center md:text-right">
             © Hoku 3D. Kõik õigused kaitstud.
           </p>
         </div>
