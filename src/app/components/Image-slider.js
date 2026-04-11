@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const images = [
-  '/image20.jpeg',
-  '/image30.jpeg',
-  '/image40.jpeg',
+  '/1.jpg',
+  '/2.jpg',
+  '/3.jpg',
 ];
 
 export default function ImageCarousel() {
