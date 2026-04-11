@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <div
       id="services"
-      className="relative grid grid-cols-[1fr_1fr_1fr_auto_1fr_1fr_1fr] grid-rows-3 place-items-center items-center justify-center rounded-b-[30px] min-h-screen sm:min-h-[600px] md:min-h-[700px] lg:min-h-[860px] bg-surface px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12 lg:pb-16"
+      className="relative grid grid-cols-[1fr_1fr_1fr_auto_1fr_1fr_1fr] grid-rows-3 place-items-center items-center justify-center rounded-b-[30px] min-h-screen sm:min-h-[600px] md:min-h-[700px] lg:min-h-[860px] bg-surface px-4 sm:px-6 lg:px-8"
     >
       <div className="col-start-2 row-start-1 w-full flex justify-end">
         <Servicecard
