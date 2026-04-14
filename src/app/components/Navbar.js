@@ -76,7 +76,7 @@ function Navbar() {
 
   return (
     <nav
-      className="responsive sticky top-0 z-50 mx-auto flex w-full items-center justify-between px-3 py-5 sm:px-4 sm:py-6 transition-all duration-300"
+      className="responsive fixed top-0 z-50 mx-auto flex w-full h-[150px] items-center justify-between px-3 py-5 sm:px-4 sm:py-6"
     >
       <div className="flex items-center gap-2 sm:gap-3">
         <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-2xl bg-accent/15 text-accent">
@@ -118,7 +118,7 @@ function Navbar() {
                 />
               </svg>
             </div>
-            <ul tabIndex={0} className="rounded-xl bg-panel/95 p-4 shadow-xl">
+            <ul tabIndex={0} className="rounded-xl bg-secondary p-4 shadow-xl">
               {links.map((link) => (
                 <li key={link.href}>
                   <button
