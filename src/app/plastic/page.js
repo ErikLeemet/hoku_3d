@@ -7,7 +7,7 @@ const Plastic = () => {
        <div className="w-full h-[90px] flex justify-center items-center bg-accent ">
           <h1 className="text-4xl font-thedusCLB text-neutral">Plastics</h1>
         </div>
-      <div className="grid grid-cols-2 h-[700px] my-auto px-[24px] pt-[24px] w-[1200px]">
+      <div className="grid grid-cols-2 h-[700px] my-auto px-[24px] pt-[24px] w-[1200px] gap-16">
         {/* INFO SECTION */}
         <div className="flex justify-center items-center flex-col h-full bg-secondary w-full gap-[24px] p-[16px]">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" className="fill-accent" xmlns="http://www.w3.org/2000/svg">
@@ -43,76 +43,109 @@ const Plastic = () => {
         </div>
 
         <div className="flex items-center flex-col h-full w-full">
-            <div className="flex justify-center items-center gap-[16px]">
+        {/* SUBHEADER */}
+            <div className="w-[500px] flex items-center gap-[16px] px-[20px] py-[10px]">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" className="fill-accent" xmlns="http://www.w3.org/2000/svg">
                     <path d="M40.2826 19.4413L30.5607 0H19.4437L9.72185 19.4413L0 38.8826L5.55852 50H44.4415L50 38.8826L40.2781 19.4413H40.2826ZM25.0022 35.176H16.6778L20.8411 26.852L25.0022 18.5281L29.1656 26.852L33.3289 35.176H25.0044H25.0022Z"/>
                 </svg>
                 <h2 className="text-[36px] font-thedusCLR text-neutral">filament</h2>
             </div>
-            <div>
-
         <div className="flex flex-col justify-center items-center">
-            <div className="flex w-[480px]">
-                <ul role="list" className="text-left text-secondary">
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Keskkonnasõbralik"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Suurepärane detail"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Sobib prototüüpide jaoks"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Sobib dekoratiivesemetele"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="con" text="Madal soojustaluvus (pehmeneb ~60°C juures)"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="con" text="Teiste plastmassidega võrreldes rabe"/>
-                    </li>
-                </ul>
-
+        {/* PLA */}
+            <div className="flex w-[500px] border-b-2 border-secondary px-[10px] py-[24px] gap-[50px]">
+                <div className="flex flex-col justify-center items-center w-[80px]">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-neutral">
+                        <path d="M30.0001 20.2883C35.5248 20.2883 40.0001 15.7484 40.0001 10.1441C40.0001 4.53982 35.5217 0 30.0001 0C24.4784 0 20 4.53982 20 10.1441C20 15.7484 24.4784 20.2883 30.0001 20.2883Z"/>
+                        <path d="M10.0001 19.8555C4.47841 19.8555 0 24.3984 0 29.9996C0 35.6008 4.47841 40.1437 10.0001 40.1437C15.5217 40.1437 20.0001 35.6008 20.0001 29.9996C20.0001 24.3984 15.5248 19.8555 10.0001 19.8555Z"/>
+                        <path d="M50.0001 19.8555C44.4754 19.8555 40 24.3984 40 29.9996C40 35.6008 44.4754 40.1437 50.0001 40.1437C55.5247 40.1437 60.0001 35.6008 60.0001 29.9996C60.0001 24.3984 55.5217 19.8555 50.0001 19.8555Z"/>
+                        <path d="M30.0001 39.7109C24.4784 39.7109 20 44.2508 20 49.855C20 55.4593 24.4784 59.9992 30.0001 59.9992C35.5217 59.9992 40.0001 55.4593 40.0001 49.855C40.0001 44.2508 35.5217 39.7109 30.0001 39.7109Z"/>
+                    </svg>
+                    <h3 className="font-thedusWLB text-[24px] text-neutral">PLA</h3>
+                </div>
+                <div>
+                    <ul role="list" className="w-[420px] text-left text-secondary">
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Keskkonnasõbralik"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Suurepärane detail"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Sobib prototüüpide jaoks"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Sobib dekoratiivesemetele"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="con" text="Madal soojustaluvus (pehmeneb ~60°C juures)"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="con" text="Teiste plastmassidega võrreldes rabe"/>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div className="flex w-[480px]">
-                <ul role="list" className="text-left text-secondary">
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Tugev ja vastupidav"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Kõrge soojustaluvus kuni ~100°C"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Sobib funktsionaalsete osade jaoks"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Sobib autoosade jaoks"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Sobib tugevate prototüüpide jaoks"/>
-                    </li>
-                </ul>
-
+        {/* PETG */}
+            <div className="flex w-[500px] border-b-2 border-secondary px-[10px] py-[24px] gap-[50px]">
+                <div className="flex flex-col justify-center items-center w-[80px]">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-neutral">
+                        <path d="M13.8514 20.8568C19.0482 19.6409 22.2668 14.4788 21.0402 9.3271C19.8137 4.17536 14.6065 0.984805 9.40965 2.20073C4.21284 3.41665 0.994312 8.57861 2.22087 13.7303C3.44743 18.8821 8.6546 22.0727 13.8514 20.8568Z"/>
+                        <path d="M50.3323 21.0886C55.6707 21.0886 60.0005 16.7992 60.0005 11.5042C60.0005 6.20921 55.6707 1.91992 50.3323 1.91992C44.9939 1.91992 40.6641 6.20921 40.6641 11.5042C40.6641 16.7992 44.9939 21.0886 50.3323 21.0886Z"/>
+                        <path d="M30.9944 20.6816C25.6559 20.6816 21.3262 24.9738 21.3262 30.2659C21.3262 35.558 25.6559 39.8503 30.9944 39.8503C36.3328 39.8503 40.6626 35.558 40.6626 30.2659C40.6626 24.9738 36.3357 20.6816 30.9944 20.6816Z"/>
+                        <path d="M13.2391 58.4635C18.5097 57.6154 22.0889 52.6922 21.2333 47.4673C20.3778 42.2424 15.4116 38.6943 10.1409 39.5425C4.87032 40.3906 1.2912 45.3137 2.14674 50.5386C3.00229 55.7635 7.96851 59.3116 13.2391 58.4635Z"/>
+                        <path d="M50.3323 39.4414C44.9939 39.4414 40.6641 43.7307 40.6641 49.0257C40.6641 54.3207 44.9939 58.6101 50.3323 58.6101C55.6707 58.6101 60.0005 54.3207 60.0005 49.0257C60.0005 43.7307 55.6707 39.4414 50.3323 39.4414Z"/>
+                    </svg>
+                    <h3 className="font-thedusWLB text-[24px] text-neutral">PETG</h3>
+                </div>
+                <div>
+                    <ul role="list" className="w-[420px] text-left text-secondary">
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Tugev ja vastupidav"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Kõrge soojustaluvus kuni ~100°C"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Sobib funktsionaalsete osade jaoks"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Sobib autoosade jaoks"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Sobib tugevate prototüüpide jaoks"/>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div className="flex w-[480px]">
-                <ul role="list" className=" text-left text-secondary">
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Tugev ja paindlik"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Keemiline vastupidavus (talub vett ja happeid)"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Sobib hästi pingele avatud funktsionaalsete osade ja välistingimustes kasutamiseks"/>
-                    </li>
-                    <li className="flex items-center space-x-3">
-                        <ProsConsItem type="pro" text="Sobib dekoratiivesemetele"/>
-                    </li>
-                </ul>
+        {/* ABS */}
+            <div className="flex w-[500px] px-[10px] py-[24px] gap-[50px]">
+                <div className="flex flex-col justify-center items-center w-[80px]">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-neutral">
+                        <path d="M33.8278 21.0229C38.9302 19.0307 41.3532 13.5167 39.2397 8.70702C37.1262 3.89738 31.2766 1.61347 26.1742 3.60568C21.0718 5.5979 18.6488 11.1118 20.7623 15.9215C22.8758 20.7311 28.7254 23.0151 33.8278 21.0229Z"/>
+                        <path d="M52.0622 21.5386C56.595 20.6435 59.9999 16.8525 59.9999 12.3148C59.9999 7.10715 55.5215 2.88867 49.9999 2.88867C44.4784 2.88867 40 7.10715 40 12.3148C40 16.8554 43.4049 20.6435 47.9376 21.5386C43.4049 22.4336 40 26.2245 40 30.7623C40 35.9699 44.4784 40.1884 49.9999 40.1884C55.5215 40.1884 59.9999 35.967 59.9999 30.7623C59.9999 26.2245 56.595 22.4336 52.0622 21.5386Z"/>
+                        <path d="M12.0622 39.9887C16.595 39.0937 19.9999 35.3026 19.9999 30.762C19.9999 25.5573 15.5245 21.3359 9.99993 21.3359C4.47534 21.3359 0 25.5573 0 30.762C0 35.3026 3.40487 39.0908 7.93764 39.9887C3.40487 40.8837 0 44.6747 0 49.2125C0 54.4201 4.47836 58.6386 9.99993 58.6386C15.5215 58.6386 19.9999 54.4201 19.9999 49.2125C19.9999 44.6718 16.595 40.8837 12.0622 39.9887Z"/>
+                        <path d="M31.6318 58.489C37.0832 57.6549 40.7852 52.813 39.9003 47.6743C39.0154 42.5357 33.8788 39.0462 28.4273 39.8803C22.9759 40.7144 19.274 45.5563 20.1589 50.6949C21.0438 55.8336 26.1803 59.3231 31.6318 58.489Z"/>
+                    </svg>
+                    <h3 className="font-thedusWLB text-[24px] text-neutral">ABS</h3>
+                </div>
+                <div>
+                    <ul role="list" className="w-[420px] text-left text-secondary">
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Tugev ja paindlik"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Keemiline vastupidavus (talub vett ja happeid)"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Sobib hästi pingele avatud funktsionaalsete osade ja välistingimustes kasutamiseks"/>
+                        </li>
+                        <li className="flex items-center space-x-3">
+                            <ProsConsItem type="pro" text="Sobib dekoratiivesemetele"/>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-            </div>
         </div>
       </div>
     </div>
