@@ -5,6 +5,9 @@
 .btn {
   @apply bg-neutral w-[180px] h-[50px] rounded-[15px] text-secondary border-[3px] border-neutral duration-300 ease-in-out hover:bg-secondary hover:text-neutral;
 }
+.mid {
+  @apply flex justify-center items-center;
+}
 
 :root {
   --color-title: #FF7178;

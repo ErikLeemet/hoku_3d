@@ -3,13 +3,13 @@ import React from "react";
 
 const Plastic = () => {
   return (
-    <div id="plastic" className="w-full min-h-screen flex flex-col justify-between items-center">
-       <div className="w-full h-[90px] flex justify-center items-center bg-accent ">
+    <div id="plastic" className="w-full min-h-screen mid flex-col">
+       <div className="w-full h-[90px] mid bg-accent ">
           <h1 className="text-4xl font-thedusCLB text-neutral">Plastics</h1>
         </div>
       <div className="grid grid-cols-2 h-[700px] my-auto px-[24px] pt-[24px] w-[1200px] gap-16">
         {/* INFO SECTION */}
-        <div className="flex justify-center items-center flex-col h-full bg-secondary w-full gap-[24px] p-[16px]">
+        <div className="mid flex-col h-full bg-secondary w-full gap-[24px] p-[16px]">
             <svg width="100" height="100" viewBox="0 0 100 100" fill="none" className="fill-accent" xmlns="http://www.w3.org/2000/svg">
             <path d="M40.4735 24.8421H59.5352C59.1326 23.0891 58.6911 21.4357 58.2107 19.8991C55.96 12.6966 53.0471 8.23828 50 8.23828C46.9529 8.23828 44.0443 12.6966 41.7893 19.8991C41.3089 21.4313 40.8674 23.0891 40.4648 24.8421H40.4735Z"/>
             <path d="M39.8893 72.3808H60.1239C61.3055 66.256 62.0154 59.0881 62.0933 51.3965H37.9199C37.9978 59.0881 38.7077 66.256 39.8893 72.3808Z"/>
@@ -50,7 +50,7 @@ const Plastic = () => {
                 </svg>
                 <h2 className="text-[36px] font-thedusCLR text-neutral">filament</h2>
             </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="mid flex-col">
         {/* PLA */}
             <div className="flex w-[500px] border-b-2 border-secondary px-[10px] py-[24px] gap-[50px]">
                 <div className="flex flex-col justify-center items-center w-[80px]">
