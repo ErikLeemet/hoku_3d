@@ -2,81 +2,88 @@ import React from "react";
 import Button from "../components/Button.js";
 
 const hero = () => {
+  const smoothScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       id="home"
       className="relative overflow-hidden grid grid-rows-[1fr_auto_1fr] place-items-center justify-center min-h-screen sm:min-h-[600px] md:min-h-[700px] lg:min-h-[860px] px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 lg:pt-16"
     >
       {/* main wrapper */}
-        <div className="row-start-2 flex items-center max-w-[260px] lg:max-w-[1000px]">
-          <div className="max-w-md lg:max-w-[1000px] flex flex-col items-center justify-center">
-            <h1 className="relative text-2xl font-bold font-thedusWLB text-accent lg:text-5xl lg:whitespace-nowrap">
-              Täpsus ja kvaliteet igas detailis
-              {/* Decoration */}
-              <svg
-                width="1184"
-                height="250"
-                viewBox="0 0 922 195"
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[-10] fill-secondary"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M48.5264 51.835L146.964 150.273H149.855V17.3086H198.855V152.309H198.431L198.42 194.121L119.11 194.099V194.056L118.534 194.633L0.220703 76.3184H0V0H48.5264V51.835ZM374.892 76.3184H374.671L318.645 132.345H435.635L379.608 76.3184H379.388V0H427.913V51.834L526.351 150.272L552.026 150.28L552.015 194.113L498.498 194.099V194.056L497.922 194.633L457.69 154.401H296.589L256.357 194.633L255.78 194.056L255.781 194.099L203.497 194.113L203.485 150.28L227.927 150.272L326.365 51.835V0H374.892V76.3184ZM723.398 74.9951H829.358V119.11H680.386L649.507 149.99H921.999V194.105H605.392L604.864 194.633L604.287 194.056L604.288 194.099L556.853 194.112L556.841 150.279L576.434 150.273L674.873 51.834V0H723.398V74.9951ZM921.855 44.3086H728.855V0.308594H921.855V44.3086Z" />
-              </svg>
-            </h1>
-            <p className="py-6 text-neutral lg:text-base lg:text-center lg:max-w-[550px]">
-              3D-printimine ja graveerimine sinu ideede elluviimiseks. Kujunda
-              detaile, kohanda esemeid ja loo midagi ainulaadset.
-            </p>
-            <div className="gap-5 w-full grid grid-cols-[1fr_180px_1fr]">
-              <div className="col-start-2 flex items-center justify-center">
-                <Button>teenused</Button>
-              </div>
-              <div className="col-start-3 flex items-center justify-start">
-                <button className="bg-neutral stroke-secondary w-[50px] h-[50px] flex justify-center items-center rounded-[15px] border-[3px] border-neutral duration-300 ease-in-out hover:bg-secondary hover:stroke-neutral">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_948_642)">
-                      <path
-                        d="M9 9L13.5 12L18 9"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M3 13.5H5"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M1 10.5H5"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M5 7.5V7C5 5.89543 5.89543 5 7 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H7C5.89543 19 5 18.1046 5 17V16.5"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_948_642">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-              </div>
+      <div className="row-start-2 flex items-center max-w-[260px] lg:max-w-[1000px]">
+        <div className="max-w-md lg:max-w-[1000px] flex flex-col items-center justify-center">
+          <h1 className="relative text-2xl font-bold font-thedusWLB text-accent lg:text-5xl lg:whitespace-nowrap">
+            Täpsus ja kvaliteet igas detailis
+            {/* Decoration */}
+            <svg
+              width="1184"
+              height="250"
+              viewBox="0 0 922 195"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[-10] fill-secondary"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M48.5264 51.835L146.964 150.273H149.855V17.3086H198.855V152.309H198.431L198.42 194.121L119.11 194.099V194.056L118.534 194.633L0.220703 76.3184H0V0H48.5264V51.835ZM374.892 76.3184H374.671L318.645 132.345H435.635L379.608 76.3184H379.388V0H427.913V51.834L526.351 150.272L552.026 150.28L552.015 194.113L498.498 194.099V194.056L497.922 194.633L457.69 154.401H296.589L256.357 194.633L255.78 194.056L255.781 194.099L203.497 194.113L203.485 150.28L227.927 150.272L326.365 51.835V0H374.892V76.3184ZM723.398 74.9951H829.358V119.11H680.386L649.507 149.99H921.999V194.105H605.392L604.864 194.633L604.287 194.056L604.288 194.099L556.853 194.112L556.841 150.279L576.434 150.273L674.873 51.834V0H723.398V74.9951ZM921.855 44.3086H728.855V0.308594H921.855V44.3086Z" />
+            </svg>
+          </h1>
+          <p className="py-6 text-neutral lg:text-base lg:text-center lg:max-w-[550px]">
+            3D-printimine ja graveerimine sinu ideede elluviimiseks. Kujunda
+            detaile, kohanda esemeid ja loo midagi ainulaadset.
+          </p>
+          <div className="gap-5 w-full grid grid-cols-[1fr_180px_1fr]">
+            <div className="col-start-2 flex items-center justify-center">
+              <Button onClick={() => smoothScroll("services")}>teenused</Button>
+            </div>
+            <div className="col-start-3 flex items-center justify-start">
+              <button className="bg-neutral stroke-secondary w-[50px] h-[50px] flex justify-center items-center rounded-[15px] border-[3px] border-neutral duration-300 ease-in-out hover:bg-secondary hover:stroke-neutral hover:scale-110">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_948_642)">
+                    <path
+                      d="M9 9L13.5 12L18 9"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M3 13.5H5"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M1 10.5H5"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M5 7.5V7C5 5.89543 5.89543 5 7 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H7C5.89543 19 5 18.1046 5 17V16.5"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_948_642">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
-        <div className="flex row-start-3 w-[6px] h-full bg-neutral"></div>
+      </div>
+      <div className="flex row-start-3 w-[6px] h-full bg-neutral"></div>
       {/* Decoration */}
       <svg
         width="1335"

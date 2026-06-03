@@ -3,30 +3,35 @@
 @tailwind utilities;
 
 .btn {
-  @apply bg-neutral w-[180px] h-[50px] rounded-[15px] text-secondary border-[3px] border-neutral duration-300 ease-in-out hover:bg-secondary hover:text-neutral;
+  @apply bg-neutral w-[180px] h-[50px] rounded-[15px] text-secondary border-[3px] border-neutral duration-300 ease-in-out hover:bg-secondary hover:text-neutral hover:scale-110 transition-transform;
 }
 .mid {
   @apply flex justify-center items-center;
 }
 
 :root {
-  --color-title: #FF7178;
+  --color-title: #ff7178;
   --color-neutral: #010101;
-  --color-primary: #D4E7E3;
-  --color-secondary: #F6FFEC;
-  --color-accent: #FF7178;
-  --shadow-custom: 5px 5px rgba(255, 113, 120, 0.4), 10px 10px rgba(255, 113, 120, 0.3), 15px 15px rgba(255, 113, 120, 0.2), 20px 20px rgba(255, 113, 120, 0.1), 25px 25px rgba(255, 113, 120, 0.05);
+  --color-primary: #d4e7e3;
+  --color-secondary: #f6ffec;
+  --color-accent: #ff7178;
+  --shadow-custom:
+    5px 5px rgba(255, 113, 120, 0.4), 10px 10px rgba(255, 113, 120, 0.3),
+    15px 15px rgba(255, 113, 120, 0.2), 20px 20px rgba(255, 113, 120, 0.1),
+    25px 25px rgba(255, 113, 120, 0.05);
 }
 
 .dark {
-  --color-title: #AE6821;
-  --color-neutral: #F6FFEC;
-  --color-primary: #351A1A;
+  --color-title: #ae6821;
+  --color-neutral: #f6ffec;
+  --color-primary: #351a1a;
   --color-secondary: #412424;
-  --color-accent: #AE6821;
-  --shadow-custom: 5px 5px rgba(174, 104, 33, 0.4), 10px 10px rgba(174, 104, 33, 0.3), 15px 15px rgba(174, 104, 33, 0.2), 20px 20px rgba(174, 104, 33, 0.1), 25px 25px rgba(174, 104, 33, 0.05);
+  --color-accent: #ae6821;
+  --shadow-custom:
+    5px 5px rgba(174, 104, 33, 0.4), 10px 10px rgba(174, 104, 33, 0.3),
+    15px 15px rgba(174, 104, 33, 0.2), 20px 20px rgba(174, 104, 33, 0.1),
+    25px 25px rgba(174, 104, 33, 0.05);
 }
-
 
 body {
   font-family: "Cascadia Mono", monospace;

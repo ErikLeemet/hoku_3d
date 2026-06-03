@@ -76,9 +76,7 @@ function Navbar() {
   ];
 
   return (
-    <nav
-      className="responsive fixed top-0 z-50 mx-auto flex w-full h-[150px] items-center justify-between px-3 py-5 sm:px-4 sm:py-6"
-    >
+    <nav className="responsive fixed top-0 z-50 mx-auto flex w-full h-[150px] items-center justify-between px-3 py-5 sm:px-4 sm:py-6">
       <div className="flex items-center gap-2 sm:gap-3">
         <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-2xl bg-accent/15 text-accent">
           <svg
@@ -96,119 +94,39 @@ function Navbar() {
           </span>
         </div>
       </div>
-      {isMobile ? (
-        <div className="flex items-center gap-3">
-        <Example></Example>
-          <div className="">
-            <div
-              tabIndex={0}
-              role="button"
-              className="p-0 m-1 bg-transparent hover:bg-transparent shadow-none border-none"
+      <div className="flex items-center gap-4 lg:gap-6">
+        <Example links={links} onSelect={smoothScroll} />
+        {/* COLOR TOGGLE BUTTON */}
+        <button
+          onClick={toggleTheme}
+          className="group inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-neutral shadow-lg shadow-black/10 backdrop-blur-xl transition hover:scale-110 hover:bg-white/20 hover:border-accent/30 dark:border-white/10 dark:bg-white/10 dark:text-white"
+          aria-label="Toggle theme"
+        >
+          {theme === "dark" ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="h-5 w-5 text-gray-900 transition group-hover:text-accent group-hover:scale-125 dark:text-white"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-                />
-              </svg>
-            </div>
-            <ul tabIndex={0} className="rounded-xl bg-secondary p-4 shadow-xl">
-              {links.map((link) => (
-                <li key={link.href}>
-                  <button
-                    onClick={() => smoothScroll(link.href)}
-                    className="font-thedusCLR text-left text-lg sm:text-xl font-medium text-neutral hover:text-accent"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-          {/* COLOR TOGGLE BUTTON */}
-          <button
-            onClick={toggleTheme}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 dark:border-white/10 bg-gradient-to-r from-white/20 to-white/10 dark:from-black/20 dark:to-black/10 text-neutral transition hover:bg-gradient-to-r hover:from-white/40 hover:to-white/30 dark:hover:from-black/40 dark:hover:to-black/30 backdrop-blur-md"
-            aria-label="Toggle theme"
-          >
-            {theme === "dark" ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className="h-5 w-5"
-              >
-                <path
-                  fill="currentColor"
-                  d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79Z"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className="h-5 w-5"
-              >
-                <path
-                  fill="currentColor"
-                  d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0 2a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"
-                />
-              </svg>
-            )}
-          </button>
-        </div>
-      ) : (
-        <div className="flex items-center gap-4 lg:gap-6">
-          <div className="flex flex-wrap items-center justify-center bg-title/50 backdrop-blur-3xl shadow-2xl p-2 rounded-[10px] gap-3 lg:gap-6">
-            {links.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => smoothScroll(link.href)}
-                className="text-base sm:text-lg md:text-xl font-medium font-thedusCLR text-neutral transition hover:text-accent"
-              >
-                {link.label}
-              </button>
-            ))}
-          </div>
-          {/* COLOR TOGGLE BUTTON */}
-          <button
-            onClick={toggleTheme}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 dark:border-white/10 bg-gradient-to-r from-white/20 to-white/10 dark:from-black/20 dark:to-black/10 text-neutral transition hover:bg-gradient-to-r hover:from-white/40 hover:to-white/30 dark:hover:from-black/40 dark:hover:to-black/30 backdrop-blur-md"
-            aria-label="Toggle theme"
-          >
-            {theme === "dark" ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className="h-5 w-5"
-              >
-                <path
-                  fill="currentColor"
-                  d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79Z"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className="h-5 w-5"
-              >
-                <path
-                  fill="currentColor"
-                  d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0 2a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"
-                />
-              </svg>
-            )}
-          </button>
-        </div>
-      )}
+              <path
+                fill="currentColor"
+                d="M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79Z"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="h-5 w-5 text-gray-900 transition group-hover:text-accent group-hover:scale-125 dark:text-white"
+            >
+              <path
+                fill="currentColor"
+                d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0 2a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"
+              />
+            </svg>
+          )}
+        </button>
+      </div>
     </nav>
   );
 }
