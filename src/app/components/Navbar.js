@@ -1,4 +1,5 @@
 "use client";
+import Example from "./Example.js";
 import React, { useState, useEffect } from "react";
 
 function Navbar() {
@@ -97,6 +98,7 @@ function Navbar() {
       </div>
       {isMobile ? (
         <div className="flex items-center gap-3">
+        <Example></Example>
           <div className="">
             <div
               tabIndex={0}
